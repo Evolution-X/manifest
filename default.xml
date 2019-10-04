@@ -777,9 +777,12 @@
   <include name="snippets/remove.xml" />
 
   <!-- Add some LineageOS repos -->
-  <include name="snippets/lineage.xml" />
+  <include name="snippets/los.xml" />
 
-  <!-- Add all PixelExperience repos -->
-  <include name="snippets/pixel.xml" />
+  <!-- Add most PixelExperience repos -->
+  <include name="snippets/pe.xml" />
+
+  <!-- Add all Evolution X repos -->
+  <include name="snippets/evo.xml" />
 
 </manifest>
