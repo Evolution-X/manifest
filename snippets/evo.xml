@@ -14,6 +14,7 @@
           revision="ten" />
 
   <!-- CodeAurora additions -->
+  <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio-caf_msm8996" remote="evo" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media-caf_sm8150" remote="evo" />
 
   <!-- External repos -->
@@ -22,6 +23,7 @@
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" remote="evo" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
 
   <!-- General repos -->
@@ -40,11 +42,13 @@
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
+  <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="evo" />

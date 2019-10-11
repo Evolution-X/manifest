@@ -14,7 +14,6 @@
   <project path="hardware/qcom-caf/msm8916/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-msm8916" remote="lineage" />
   <project path="hardware/qcom-caf/msm8974/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-msm8974" remote="lineage" />
   <project path="hardware/qcom-caf/msm8994/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-msm8994" remote="lineage" />
-  <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-msm8996" remote="lineage" />
   <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="lineage-17.0-caf-sdm845" remote="lineage" />
   <project path="hardware/qcom-caf/msm8916/display" name="android_hardware_qcom_display" revision="lineage-17.0-caf-msm8916" remote="lineage" />
   <project path="hardware/qcom-caf/msm8974/display" name="android_hardware_qcom_display" revision="lineage-17.0-caf-msm8974" remote="lineage" />
