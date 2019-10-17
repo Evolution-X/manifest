@@ -27,6 +27,7 @@
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
 
   <!-- General repos -->
+  <project path="bionic" name="bionic" remote="evo" />
   <project path="build/make" name="build" remote="evo">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
