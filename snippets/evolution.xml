@@ -5,9 +5,20 @@
           fetch="https://github.com/Evolution-X"
           revision="ten" />
 
+  <remote name="evo-fod"
+          fetch="https://github.com/Evolution-X"
+          revision="fod" />
+
+  <remote name="evo-los"
+          fetch="https://github.com/Evolution-X"
+          revision="lineage-17.1" />
+
   <remote name="evo-devices"
           fetch="https://github.com/Evolution-X-Devices"
           revision="ten" />
+
+  <!-- CodeAurora additions -->
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="evo-los" />
 
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
@@ -32,12 +43,13 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
-  <project path="manifest" name="manifest" remote="evo" />
+  <project path="manifest" name="manifest" remote="evo-fod" />
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
   <!-- Hardware repos -->  
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="evo" />
+  <project path="hardware/lineage/livedisplay" name="hardware_lineage_livedisplay" remote="evo" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
