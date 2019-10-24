@@ -15,7 +15,6 @@
 
   <!-- CodeAurora additions -->
   <project path="hardware/qcom-caf/msm8996/audio" name="hardware_qcom_audio-caf_msm8996" remote="evo" />
-  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media-caf_sm8150" remote="evo" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf_sdm845" remote="evo" />  
 
   <!-- External repos -->
