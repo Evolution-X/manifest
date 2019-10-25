@@ -24,6 +24,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
 
   <!-- General repos -->
