@@ -34,7 +34,7 @@
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
 
   <!-- Pathmap -->
-   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel" >
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- for AOSP sdm845, we override os_pickup.mk -->
@@ -59,9 +59,6 @@
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
   </project>
-
-  <!-- Framework repos -->
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
 
   <!-- General repos -->
   <project path="art" name="art" remote="pixel" />
