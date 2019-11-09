@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="evo"
+          fetch="https://github.com/EvoX-Temp"
+          revision="ten" />
+
+  <remote name="evo-devices"
+          fetch="https://github.com/Evolution-X-Devices"
+          revision="ten" />
+
+  <remote name="evo-gitlab"
+          fetch="https://gitlab.com/EvoX"
+          revision="ten" />
+
+  <!-- CodeAurora additions -->
+  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf_sdm845" remote="evo" />
+
+  <!-- External repos -->
+  <project path="external/sqlite" name="external_sqlite" remote="evo" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+
+  <!-- General repos -->
+  <project path="build/make" name="build" remote="evo">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
+  <project path="manifest" name="manifest" remote="evo" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
+  <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+
+  <!-- System Repos -->
+  <project path="system/bt" name="system_bt" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/netd" name="system_netd" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+
+</manifest>

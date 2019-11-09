@@ -794,6 +794,9 @@
   <!-- Remove unused AOSP repos -->
   <include name="snippets/remove.xml" />
 
+  <!-- Add all Evolution X repos -->
+  <include name="snippets/evolution.xml" />
+
   <!-- Add some LineageOS repos -->
   <include name="snippets/lineage.xml" />
 
