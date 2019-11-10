@@ -16,6 +16,9 @@
   <!-- CodeAurora additions -->
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf_sdm845" remote="evo" />
 
+  <!-- Google additions -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="evo" />
+
   <!-- External repos -->
   <project path="external/sqlite" name="external_sqlite" remote="evo" />
 
