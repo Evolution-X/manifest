@@ -13,9 +13,6 @@
           fetch="https://gitlab.com/EvoX"
           revision="ten" />
 
-  <!-- CodeAurora additions -->
-  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media-caf_sdm845" remote="evo" />
-
   <!-- External repos -->
   <project path="external/sqlite" name="external_sqlite" remote="evo" />
 
