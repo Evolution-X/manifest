@@ -14,6 +14,7 @@
           revision="ten" />
 
   <!-- External repos -->
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
   <project path="external/sqlite" name="external_sqlite" remote="evo" />
 
   <!-- Framework repos -->
