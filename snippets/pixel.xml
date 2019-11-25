@@ -41,7 +41,6 @@
   </project>
 
   <!-- Framework repos -->
-  <project path="frameworks/native" name="frameworks_native" remote="pixel" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
 
   <!-- General repos -->
