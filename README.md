@@ -1,4 +1,4 @@
-![Evolution X](https://github.com/Evolution-X-Legacy/platform_manifest/raw/pie/EvoBanner.png)
+![Evolution X](https://github.com/Evolution-X/manifest/raw/ten/EvoBanner.png)
 
 # Evolution X #
 
