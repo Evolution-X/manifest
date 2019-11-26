@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="evo"
-          fetch="https://github.com/EvoX-Temp"
+          fetch="https://github.com/Evolution-X"
           revision="ten" />
 
   <remote name="evo-devices"
@@ -48,6 +48,9 @@
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/clang/host/linux-x86" name="prebuilts_clang_host_linux-x86" remote="evo" clone-depth="1" />
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="evo" />
