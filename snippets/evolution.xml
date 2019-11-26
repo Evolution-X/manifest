@@ -36,6 +36,7 @@
   </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
+  <project path="platform_testing" name="platform_testing" remote="evo" />
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
   <project path="vendor/gapps" name="vendor_gapps" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
