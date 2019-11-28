@@ -27,9 +27,6 @@
   <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
   <project path="development" name="development" remote="pixel" />
 
-  <!-- Custom additions -->
-  <project path="prebuilts/tools-custom" name="prebuilts_tools-custom" remote="pixel" clone-depth="1" />
-
   <!-- Hardware repos -->
   <project path="hardware/libhardware" name="hardware_libhardware" remote="pixel" />
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
@@ -50,7 +47,6 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
 
   <!-- System Repos -->
-  <project path="system/update_engine" name="system_update_engine" remote="pixel" />
   <project path="system/vold" name="system_vold" remote="pixel" />
 
 </manifest>
