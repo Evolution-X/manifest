@@ -64,6 +64,5 @@
   <!-- System Repos -->
   <project path="system/keymaster" name="system_keymaster" remote="pixel" />
   <project path="system/netd" name="system_netd" remote="pixel" />
-  <project path="system/vold" name="system_vold" remote="pixel" />
 
 </manifest>

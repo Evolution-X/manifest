@@ -50,5 +50,6 @@
   <project path="system/bt" name="system_bt" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/vold" name="system_vold" remote="evo" />
 
 </manifest>
