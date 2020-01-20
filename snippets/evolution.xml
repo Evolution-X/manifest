@@ -18,6 +18,7 @@
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
 
   <!-- General repos -->
@@ -32,12 +33,10 @@
   </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
-  <project path="platform_testing" name="platform_testing" remote="evo" />
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
   <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
@@ -47,9 +46,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
   <!-- System Repos -->
-  <project path="system/bt" name="system_bt" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
-  <project path="system/vold" name="system_vold" remote="evo" />
 
 </manifest>
