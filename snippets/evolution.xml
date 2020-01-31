@@ -36,6 +36,9 @@
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
+  <!-- Hardware repos -->  
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="evo" />
+
   <!-- Packages repos -->
   <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
