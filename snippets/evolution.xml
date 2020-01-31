@@ -43,6 +43,7 @@
   <project path="packages/apps/Evolution" name="packages_apps_Evolution" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
