@@ -31,6 +31,10 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/soong" name="build_soong" remote="evo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
