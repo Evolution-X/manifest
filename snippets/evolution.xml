@@ -2,15 +2,15 @@
 <manifest>
 
   <remote name="evo"
-          fetch="https://github.com/Evolution-X"
+          fetch="git+ssh://git@github.com/Evolution-X"
           revision="ten" />
 
   <remote name="evo-fod"
-          fetch="https://github.com/Evolution-X"
+          fetch="git+ssh://git@github.com/Evolution-X"
           revision="fod" />
 
   <remote name="evo-los"
-          fetch="https://github.com/Evolution-X"
+          fetch="git+ssh://git@github.com/Evolution-X"
           revision="lineage-17.1" />
 
   <remote name="evo-devices"
