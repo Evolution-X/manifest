@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="packages/apps/Dirac" remote="github" name="Havoc-OS/android_packages_apps_Dirac" revision="ten" />
+</manifest>
