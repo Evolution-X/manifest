@@ -56,6 +56,7 @@
 
   <!-- System Repos -->
   <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/netd" name="system_netd" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
 
 </manifest>

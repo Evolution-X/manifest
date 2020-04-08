@@ -5,6 +5,11 @@
           fetch="https://github.com/PixelExperience"
           revision="ten" />
 
+  <remote name="pixel-plus"
+          fetch="https://github.com/PixelExperience"
+          revision="ten-plus"
+          review="gerrit.pixelexperience.org" />
+
   <remote name="pixel-gitlab"
           fetch="https://gitlab.com/PixelExperience"
           revision="ten" />
@@ -72,6 +77,7 @@
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
 
   <!-- External repos -->
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="pixel-plus" />
   <project path="external/libcxx" name="external_libcxx" remote="pixel" />
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="pixel" />
@@ -83,7 +89,6 @@
   <project path="system/extras" name="system_extras" remote="pixel" />
   <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixel" />
   <project path="system/keymaster" name="system_keymaster" remote="pixel" />
-  <project path="system/netd" name="system_netd" remote="pixel" />
   <project path="system/vold" name="system_vold" remote="pixel" />
 
 </manifest>
