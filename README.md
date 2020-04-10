@@ -8,11 +8,17 @@
 
 ```bash
 
-# Initialize local repository
-repo init -u https://github.com/Evolution-X/manifest -b ten
+# Clone build repository
+$ git clone https://github.com/Evolution-X/build
 
-# Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+# Set up environment for sync
+$ . build/envsetup.sh
+
+# Sync for the first time
+$ repofirstsync
+
+# Sync for the second times and later on
+$ reposync
 ```
 
 ### Build ###
@@ -26,5 +32,5 @@ $ . build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ mka bacon
 ```
