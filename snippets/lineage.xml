@@ -81,6 +81,7 @@
   <project path="external/exfat" name="android_external_exfat" remote="lineage" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
+  <project path="external/ppp" name="android_external_ppp" remote="lineage" />
   <project path="external/selinux" name="android_external_selinux" remote="lineage" />
   <project path="external/tinyalsa" name="android_external_tinyalsa" remote="lineage" />
   <project path="external/toybox" name="android_external_toybox" remote="lineage" />

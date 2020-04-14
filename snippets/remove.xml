@@ -61,6 +61,7 @@
   <remove-project name="platform/external/google-fonts/zilla-slab" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/libhevc" />
+  <remove-project name="platform/external/ppp" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinyalsa" />
