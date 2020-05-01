@@ -54,6 +54,7 @@
   <remove-project name="device/ti/beagle-x15-kernel" />
 
   <!-- External repos -->
+  <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/google-fonts/arbutus-slab" />
   <remove-project name="platform/external/google-fonts/lato" />
@@ -61,6 +62,7 @@
   <remove-project name="platform/external/google-fonts/zilla-slab" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/ppp" />
   <remove-project name="platform/external/selinux" />
@@ -159,6 +161,7 @@
   <remove-project name="platform/system/keymaster" />
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/timezone" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
 
