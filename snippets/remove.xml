@@ -63,7 +63,6 @@
   <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/ppp" />
   <remove-project name="platform/external/selinux" />
-  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinyalsa" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/toybox" />
