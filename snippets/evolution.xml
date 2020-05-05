@@ -54,6 +54,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
   <!-- System Repos -->
+  <project path="system/bt" name="system_bt" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/netd" name="system_netd" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
