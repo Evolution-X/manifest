@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="evo"
-          fetch="https://github.com/Evolution-X"
+  <remote name="weebs"
+          fetch="https://github.com/EvoX-Weaboo"
           revision="ten" />
-
-  <remote name="evo-devices"
-          fetch="https://github.com/Evolution-X-Devices"
-          revision="ten" />
-
+  
+  <remote name="atom1"
+        fetch="https://bitbucket.org/atomos1"
+        sync-j="4" />
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+  
   <!-- External repos -->
-  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
-
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="weebs" />
+  <project path="external/motorola/faceunlock" name="android_external_faceunlock" remote="atom1" revision="ten" />
+  
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
-  <project path="frameworks/native" name="frameworks_native" remote="evo" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
-  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+  <project path="frameworks/av" name="frameworks_av" remote="weebs" />
+  <project path="frameworks/base" name="frameworks_base" remote="weebs" />
+  <project path="frameworks/native" name="frameworks_native" remote="weebs" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="weebs" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="weebs" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="weebs" />
 
   <!-- General repos -->
-  <project path="build/make" name="build" remote="evo">
+  <project path="build/make" name="build" remote="weebs">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -30,32 +33,32 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="evo" >
+  <project path="build/soong" name="build_soong" remote="weebs" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
-  <project path="manifest" name="manifest" remote="evo" />
-  <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
-  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="weebs" />
+  <project path="manifest" name="manifest" remote="weebs" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="weebs" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="weebs" />
 
   <!-- Hardware repos -->  
-  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="evo" />
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="weebs" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
-  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
-  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
-  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
-  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="weebs" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="weebs" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="weebs" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="weebs" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="weebs" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="weebs" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="weebs" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="weebs" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="weebs" />
 
   <!-- System Repos -->
-  <project path="system/core" name="system_core" remote="evo" />
-  <project path="system/netd" name="system_netd" remote="evo" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/core" name="system_core" remote="weebs" />
+  <project path="system/netd" name="system_netd" remote="weebs" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="weebs" />
 
 </manifest>
