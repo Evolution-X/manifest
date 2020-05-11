@@ -5,9 +5,14 @@
           fetch="https://github.com/EvoX-Weaboo"
           revision="ten" />
   
+  <remote name="evo-devices"
+          fetch="https://github.com/Evolution-X-Devices"
+          revision="ten" />
+  
   <remote name="atom1"
         fetch="https://bitbucket.org/atomos1"
         sync-j="4" />
+ 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
   
