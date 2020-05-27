@@ -46,6 +46,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
+  <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
