@@ -5,6 +5,10 @@
           fetch="https://github.com/Evolution-X"
           revision="ten" />
 
+  <remote name="evo-gitlab"
+          fetch="https://gitlab.com/EvoX"
+          revision="ten" />
+
   <remote name="evo-devices"
           fetch="https://github.com/Evolution-X-Devices"
           revision="ten" />
@@ -56,7 +60,7 @@
 
   <!-- System Repos -->
   <project path="system/bt" name="system_bt" remote="evo" />
-  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo-gitlab" />
   <project path="system/netd" name="system_netd" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
 
