@@ -13,6 +13,10 @@
           fetch="https://github.com/Evolution-X-Devices"
           revision="ten" />
 
+  <!-- CodeAurora additions -->
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="evo" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="evo" />
+
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
 
