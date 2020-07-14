@@ -19,6 +19,7 @@
 
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
+  <project path="external/pulse" name="external_pulse" remote="evo" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
