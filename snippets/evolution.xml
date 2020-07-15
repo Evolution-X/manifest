@@ -59,6 +59,7 @@
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="evo" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
