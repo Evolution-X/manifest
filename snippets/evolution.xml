@@ -46,6 +46,7 @@
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
   <project path="vendor/aosp" name="vendor_aosp" remote="evo" />
+  <project path="vendor/google-customization" name="vendor_google-customization" remote="evo" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
   <!-- Hardware repos -->  
