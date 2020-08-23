@@ -85,4 +85,7 @@
   <project path="external/skia" name="android_external_skia" remote="lineage" />
   <project path="external/ppp" name="android_external_ppp" remote="lineage" />
 
+  <!-- System Repos -->
+  <project path="system/libufdt" name="android_system_libufdt" remote="lineage" />
+
 </manifest>
