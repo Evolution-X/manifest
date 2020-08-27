@@ -11,7 +11,7 @@
           review="gerrit.pixelexperience.org" />
 
   <remote name="pixel-gitlab"
-          fetch="https://gitlab.com/PixelExperience"
+          fetch="https://gitlab.pixelexperience.org/android"
           revision="ten" />
 
   <!-- CodeAurora additions -->
