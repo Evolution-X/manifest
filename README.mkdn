@@ -1,0 +1,51 @@
+![Evolution X](https://github.com/Evolution-X/manifest/raw/ten/EvoBanner.png)
+
+Evolution X
+===========
+
+[![Download Evolution X](https://img.shields.io/sourceforge/dt/evolution-x.svg)](https://sourceforge.net/projects/evolution-x/files/latest/download)
+
+### Sync ###
+
+```bash
+
+# Initialize local repository
+repo init -u https://github.com/Evolution-X/manifest -b elle
+
+# Sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+
+### Build ###
+
+```bash
+
+# Set up environment
+$ . build/envsetup.sh
+
+# Choose a target
+$ lunch evolution_$device-userdebug
+
+# Build the code
+$ mka bacon -jX
+```
+
+# Credits:
+ =======
+
+ * [**LineageOS**](https://github.com/LineageOS)
+ * [**ParanoidAndroid**](https://github.com/AOSPA)
+ * [**RevengeOS**](https://github.com/RevengeOS)
+ * [**BlissROMs**](https://github.com/BlissRoms)
+ * [**Octavi-OS**](https://github.com/Octavi-OS)
+ * [**hentaiOS**](https://github.com/hentaiOS)
+ * [**POSP**](https://github.com/PotatoProject)
+ * [**AOSiP**](https://github.com/AOSiP)
+ * [**ArrowOS**](https://github.com/ArrowOS)
+ * [**PixelExperience**](https://github.com/PixelExperience)
+ * [**PixelExtended**](https://github.com/PixelExtended)
+ * [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+ * [**AospExtended**](https://github.com/AospExtended)
+ * [**Havoc-OS**](https://github.com/Havoc-OS)
+ * [**Xtended**](https://github.com/Project-Xtended)
+ * [**ColtOS**](https://github.com/Colt-Enigma)

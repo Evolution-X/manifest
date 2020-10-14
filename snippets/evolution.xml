@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/elle" />
+
+  <remote  name="github/hentaiOS"
+           fetch="https://github.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="gitlab/hentaiOS"
+           fetch="https://gitlab.com/hentaiOS"
+           revision="refs/heads/Rika" />
+
+  <remote  name="octavi"
+           fetch="https://github.com/Octavi-OS"
+           revision="refs/heads/11" />
+
+  <!-- Remove unused hardware repos -->
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/car" />
+  <remove-project name="device/generic/common"/>
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/opengl-transport"/>
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty"/>
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/bonito" />
+  <remove-project name="device/google/bonito-kernel" />
+  <remove-project name="device/google/coral" />
+  <remove-project name="device/google/coral-kernel" />
+  <remove-project name="device/google/sunfish" />
+  <remove-project name="device/google/sunfish-kernel" />
+  <remove-project name="device/google/crosshatch" />
+  <remove-project name="device/google/crosshatch-kernel" />
+  <remove-project name="device/google/cuttlefish" />
+  <remove-project name="device/google/cuttlefish_kernel" />
+  <remove-project name="device/google/cuttlefish_vmm" />
+  <remove-project name="device/google/fuchsia" />
+  <remove-project name="device/google/muskie" />
+  <remove-project name="device/google/taimen" />
+  <remove-project name="device/google/trout" />
+  <remove-project name="device/google/wahoo" />
+  <remove-project name="device/google/wahoo-kernel" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/linaro/bootloader/OpenPlatformPkg" />
+  <remove-project name="device/linaro/bootloader/arm-trusted-firmware" />
+  <remove-project name="device/linaro/bootloader/edk2" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="platform/bionic" />
+  <remove-project name="platform/bootable/recovery" />
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/blueprint" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <remove-project name="platform/hardware/qcom/sm8150/display" />
+  <remove-project name="platform/hardware/qcom/sm8150/media" />
+  <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/Stk" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/platform_testing" />
+  <remove-project name="platform/prebuilts/abi-dumps/vndk" />
+  <remove-project name="platform/prebuilts/build-tools" />
+  <remove-project name="platform/system/bt" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/incremental_delivery" />
+  <remove-project name="platform/system/libufdt" />
+  <remove-project name="platform/system/netd" />
+  <remove-project name="platform/system/sepolicy" />
+  <remove-project name="platform/system/tools/mkbootimg" />
+  <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/vold" />
+  <remove-project name="platform/external/guice" />
+  <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/tools/metalava" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+
+  <!-- Device repos -->
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="evo" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
+
+  <!-- External repos -->
+  <project path="external/guice" name="external_guice" remote="evo" />
+  <project path="external/libcxx" name="external_libcxx" remote="evo" />
+  <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" remote="evo" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+
+  <!-- General repos -->
+  <project path="bionic" name="bionic" remote="evo" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
+  <project path="build/make" name="build" remote="evo" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="build_blueprint" remote="evo" />
+  <project path="build/soong" name="build_soong" remote="evo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="manifest" name="manifest" remote="evo" />
+  <project path="platform_testing" name="platform_testing" remote="evo" />
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" clone-depth="1" remote="gitlab/hentaiOS" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
+
+  <!-- CAF Hals -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="evo">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <!-- <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" /> -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+  </project>
+  <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom_audio" remote="octavi" revision="11-caf-sm8150"/>
+  <project path="hardware/qcom-caf/sm8150/media" name="platform_hardware_qcom_media" remote="octavi" revision="11-caf-sm8150"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom_display" remote="octavi" revision="11-caf-sm8150"/>
+
+  <!-- Hardware repos -->
+  <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />
+  <project path="hardware/ril" name="hardware_ril" remote="evo" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
+  <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <project path="packages/apps/SettingsIntelligenceAOSP" name="packages_apps_SettingsIntelligence" remote="evo" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="evo" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
+
+  <!-- Prebuilt repos -->
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" remote="octavi" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="octavi" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="octavi" />
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" clone-depth="1" remote="evo" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+
+  <!-- Services repos -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+
+  <!-- System repos -->
+  <project path="system/bt" name="system_bt" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/incremental_delivery" name="system_incremental_delivery" remote="evo" />
+  <project path="system/netd" name="system_netd" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
+  <project path="system/update_engine" name="system_update_engine" remote="evo" />
+  <project path="system/vold" name="system_vold" remote="evo" />
+
+  <!-- Tools repos -->
+  <project path="tools/metalava" name="tools_metalava" remote="evo" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="evo" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="evo" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="evo" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="evo" />
+
+</manifest>
