@@ -118,6 +118,7 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
+  <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
   <project path="external/guice" name="external_guice" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
