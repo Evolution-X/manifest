@@ -8,6 +8,10 @@
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/elle" />
 
+  <remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           revision="refs/heads/elle" />
+
   <remote  name="github/hentaiOS"
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/Rika" />
