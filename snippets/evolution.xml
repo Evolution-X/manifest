@@ -92,6 +92,7 @@
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/platform_testing" />
@@ -193,6 +194,7 @@
   <!-- Providers repos -->
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="evo" />
 
   <!-- Services repos -->
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
