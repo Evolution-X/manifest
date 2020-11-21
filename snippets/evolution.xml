@@ -164,9 +164,6 @@
   <project path="hardware/qcom/sm7250/media" name="platform_hardware_qcom_sm7250_media" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/display" name="platform_hardware_qcom_sm8150_display" groups="pdk" remote="github/hentaiOS" />
   <project path="hardware/qcom/sm8150/media" name="platform_hardware_qcom_sm8150_media" groups="pdk" remote="github/hentaiOS" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="platform_hardware_qcom_audio" remote="octavi" revision="11-caf-sm8150"/>
-  <project path="hardware/qcom-caf/sm8150/media" name="platform_hardware_qcom_media" remote="octavi" revision="11-caf-sm8150"/>
-  <project path="hardware/qcom-caf/sm8150/display" name="platform_hardware_qcom_display" remote="octavi" revision="11-caf-sm8150"/>
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
