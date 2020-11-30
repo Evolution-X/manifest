@@ -12,6 +12,10 @@
            fetch="https://github.com/Evolution-X-Devices"
            revision="refs/heads/elle" />
 
+  <remote  name="evo-gitlab"
+           fetch="https://gitlab.com/EvoX"
+           revision="refs/heads/elle" />
+
   <remote  name="github/hentaiOS"
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/Rika" />
@@ -159,7 +163,7 @@
   <project path="manifest" name="manifest" remote="evo" />
   <project path="platform_testing" name="platform_testing" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
-  <project path="vendor/gms" name="platform_vendor_gms" groups="vendor" clone-depth="1" remote="gitlab/hentaiOS" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" clone-depth="1" remote="evo-gitlab" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
   <!-- CAF Hals -->
