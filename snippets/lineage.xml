@@ -25,6 +25,7 @@
   <project path="external/p7zip" name="android_external_p7zip" remote="lineage" />
   <project path="external/pigz" name="android_external_pigz" remote="lineage" />
   <project path="external/rsync" name="android_external_rsync" remote="lineage" />
+  <project path="external/tinyalsa" name="android_external_tinyalsa" remote="lineage" />
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
   <project path="external/vim" name="android_external_vim" remote="lineage" />
   <project path="external/zip" name="android_external_zip" remote="lineage" />

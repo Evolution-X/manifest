@@ -118,6 +118,7 @@
   <remove-project name="platform/external/guice" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/tinyalsa" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/tools/metalava" />
   <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
