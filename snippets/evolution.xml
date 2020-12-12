@@ -20,10 +20,6 @@
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/Rika" />
 
-  <remote  name="gitlab/hentaiOS"
-           fetch="https://gitlab.com/hentaiOS"
-           revision="refs/heads/Rika" />
-
   <remote  name="octavi"
            fetch="https://github.com/Octavi-OS"
            revision="refs/heads/11" />
