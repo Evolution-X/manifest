@@ -158,7 +158,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
   <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo" />
@@ -184,7 +184,7 @@
   </project>
   <project path="libcore" name="libcore" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
-  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="vendor/gms" name="vendor_gapps" groups="vendor" clone-depth="1" remote="evo-gitlab" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
 
@@ -199,7 +199,7 @@
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />
@@ -208,7 +208,7 @@
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
   <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="evo" />
   <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="evo" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="packages/apps/SettingsIntelligenceAOSP" name="packages_apps_SettingsIntelligence" remote="evo" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
   <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="evo" />
@@ -231,11 +231,11 @@
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="evo" />
 
   <!-- Services repos -->
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
   <!-- System repos -->
-  <project path="system/bt" name="system_bt" remote="evo" />
+  <project path="system/bt" name="system_bt" remote="evo" revision="refs/heads/elle-aosp" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="evo" />
   <project path="system/netd" name="system_netd" remote="evo" />
@@ -249,10 +249,6 @@
   <project path="tools/metalava" name="tools_metalava" remote="evo" />
 
   <!-- Vendor repos -->
-  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="vendor_qcom_opensource_bluetooth-commonsys-intf" remote="evo" />
-  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="vendor_qcom_opensource_bluetooth_ext" remote="evo" />
-  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="vendor_qcom_opensource_packages_apps_Bluetooth" remote="evo" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_system_bt" remote="evo" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="evo" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="evo" />
 
