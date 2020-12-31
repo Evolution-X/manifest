@@ -183,6 +183,7 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
   <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="evo" />
+  <project path="packages/apps/Plugins" name="packages_apps_Plugins" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/SettingsIntelligenceAOSP" name="packages_apps_SettingsIntelligence" remote="evo" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
