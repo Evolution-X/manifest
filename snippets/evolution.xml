@@ -62,6 +62,7 @@
   <remove-project name="device/linaro/bootloader/edk2" />
   <remove-project name="device/linaro/hikey" />
   <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
@@ -145,6 +146,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
 
   <!-- General repos -->
+  <project path="art" name="art" remote="evo" />
   <project path="bionic" name="bionic" remote="evo" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
   <project path="build/make" name="build" remote="evo" >
