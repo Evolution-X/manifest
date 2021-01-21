@@ -107,6 +107,7 @@
   <remove-project name="platform/system/incremental_delivery" />
   <remove-project name="platform/system/libufdt" />
   <remove-project name="platform/system/netd" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
@@ -212,6 +213,7 @@
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/incremental_delivery" name="system_incremental_delivery" remote="evo" />
   <project path="system/netd" name="system_netd" remote="evo" />
+  <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
