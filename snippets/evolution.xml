@@ -132,6 +132,7 @@
 
   <!-- External repos -->
   <project path="external/airbnb-lottie" name="external_airbnb-lottie" remote="evo" />
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="evo" />
   <project path="external/guice" name="external_guice" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/pulse" name="external_pulse" remote="evo" />
