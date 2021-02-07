@@ -132,6 +132,7 @@
 
   <!-- External repos -->
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="evo" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="evo" />
   <project path="external/guice" name="external_guice" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/lottie" name="external_lottie" remote="evo" />
@@ -184,6 +185,7 @@
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
   <project path="packages/apps/PermissionController" name="packages_apps_PackageInstaller" remote="evo" />
