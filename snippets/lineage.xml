@@ -13,12 +13,14 @@
   <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="lineage" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="lineage" />
   <project path="external/bash" name="android_external_bash" remote="lineage" />
+  <project path="external/cldr" name="android_external_cldr" groups="pdk" remote="lineage" />
   <project path="external/connectivity" name="android_external_connectivity" remote="lineage" />
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/exfat" name="android_external_exfat" remote="lineage" revision="lineage-17.1" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
-  <project path="external/json-c" name="android_external_json-c" remote="lineage" />
   <project path="external/htop" name="android_external_htop" remote="lineage" />
+  <project path="external/icu" name="android_external_icu" groups="pdk" remote="lineage" />
+  <project path="external/json-c" name="android_external_json-c" remote="lineage" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
   <project path="external/libnfc-nxp" name="android_external_libnfc-nxp" remote="lineage" />
   <project path="external/nano" name="android_external_nano" remote="lineage" />
@@ -127,6 +129,7 @@
 
   <!-- System repos -->
   <project path="system/libufdt" name="android_system_libufdt" groups="pdk" remote="lineage" />
+  <project path="system/timezone" name="android_system_timezone" groups="pdk" remote="lineage" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
 
   <!-- Vendor repos -->
