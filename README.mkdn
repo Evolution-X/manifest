@@ -31,7 +31,6 @@ $ mka bacon -jX
 ```
 
 # Credits:
- =======
 
  * [**LineageOS**](https://github.com/LineageOS)
  * [**ParanoidAndroid**](https://github.com/AOSPA)
