@@ -87,6 +87,7 @@
   <remove-project name="platform/hardware/qcom/sm8150/display" />
   <remove-project name="platform/hardware/qcom/sm8150/media" />
   <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/libcore" />
   <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/PackageInstaller" />
@@ -170,6 +171,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="libcore" name="libcore" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
   <project path="platform_testing" name="platform_testing" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
