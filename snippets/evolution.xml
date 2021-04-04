@@ -100,7 +100,6 @@
   <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
-  <remove-project name="platform/platform_testing" />
   <remove-project name="platform/prebuilts/abi-dumps/vndk" />
   <remove-project name="platform/prebuilts/build-tools" />
   <remove-project name="platform/system/bt" />
@@ -173,7 +172,6 @@
   </project>
   <project path="libcore" name="libcore" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
-  <project path="platform_testing" name="platform_testing" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/gms" name="vendor_gapps" groups="vendor" clone-depth="1" remote="evo-gitlab" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="evo" />
