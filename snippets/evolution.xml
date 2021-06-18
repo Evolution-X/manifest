@@ -201,6 +201,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/SettingsIntelligenceAOSP" name="packages_apps_SettingsIntelligence" remote="evo" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
+  <project path="packages/apps/SoftAPManager" name="packages_apps_SoftAPManager" remote="evo" />
   <project path="packages/apps/Snap" name="packages_apps_Snap" remote="evo" />
   <project path="packages/apps/Stk" name="packages_apps_Stk" remote="evo" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
