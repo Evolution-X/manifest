@@ -4,6 +4,9 @@
   <remote  name="github"
            fetch="https://github.com" />
 
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
   <remote  name="evo"
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/elle" />
