@@ -137,6 +137,7 @@
   <project path="system/media" name="android_system_media" groups="pdk" remote="lineage" />
   <project path="system/timezone" name="android_system_timezone" groups="pdk" remote="lineage" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
+  <project path="system/qcom" name="android_system_qcom" remote="lineage" />
 
   <!-- Vendor repos -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="lineage" />
