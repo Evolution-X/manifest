@@ -27,7 +27,7 @@ $ . build/envsetup.sh
 $ lunch evolution_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ mka evolution
 ```
 
 # Credits:
