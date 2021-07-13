@@ -59,3 +59,5 @@ $ mka evolution
  * [**Havoc-OS**](https://github.com/Havoc-OS)
  * [**Xtended**](https://github.com/Project-Xtended)
  * [**ColtOS**](https://github.com/Colt-Enigma)
+ * [**DerpFest**](https://derpfest.org)
+ * [**exTHmUI**](https://github.com/exTHmUI)
