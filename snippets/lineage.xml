@@ -136,6 +136,7 @@
   <!-- System repos -->
   <project path="system/libufdt" name="android_system_libufdt" groups="pdk" remote="lineage" />
   <project path="system/media" name="android_system_media" groups="pdk" remote="lineage" />
+  <project path="system/nfc" name="android_system_nfc" groups="pdk" remote="lineage" />
   <project path="system/qcom" name="android_system_qcom" remote="lineage" />
   <project path="system/timezone" name="android_system_timezone" groups="pdk" remote="lineage" />
   <project path="system/tools/dtbtool" name="android_system_tools_dtbtool" remote="lineage" />
