@@ -23,6 +23,10 @@
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/SaltyIceCream" />
 
+  <remote  name="proton"
+           fetch="https://github.com/protonaosp"
+           revision="sc" />
+
   <!-- Remove unused hardware repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -89,21 +93,25 @@
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/media" />
 
+  <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
 
@@ -113,11 +121,15 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
+  <project path="external/colorkt" name="android_external_colorkt" remote="proton" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
+  <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/themelib" name="android_external_themelib" remote="proton" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r48" />
 
   <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="evo" />
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
 
@@ -139,15 +151,22 @@
   </project>
   <project path="manifest" name="manifest" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="evo" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="evo" />
+
+  <!-- Providers repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
 
   <!-- Resources repos -->
   <project path="packages/resources/devicesettings-custom" name="packages_resources_devicesettings-custom" remote="evo" />
@@ -158,12 +177,12 @@
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
 
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="evo" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="evo" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="evo" />
-
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="evo" />
 
 </manifest>
