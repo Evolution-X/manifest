@@ -155,9 +155,6 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="manifest" name="manifest" remote="evo" />
-  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
-  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
@@ -190,8 +187,11 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/nxp/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
   </project>
   <!--project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom" remote="arrow" revision="arrow-12.0-caf" />
   <project path="hardware/qcom-caf/msm8916/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-msm8916" />
@@ -260,6 +260,18 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
 
+  <!-- vendor repos -->
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="arrow" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="arrow" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="arrow" revision="arrow-12.0-pn5xx" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="arrow" revision="arrow-12.0-pn5xx" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="arrow" revision="arrow-12.0-sn100x" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="arrow" revision="arrow-12.0-sn100x" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="evo" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="evo" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="evo" />
