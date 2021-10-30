@@ -135,8 +135,10 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
+  <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r48" />
 
