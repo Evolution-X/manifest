@@ -23,10 +23,6 @@
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/SaltyIceCream" />
 
-  <remote  name="proton"
-           fetch="https://github.com/protonaosp"
-           revision="sc" />
-
   <!-- Remove unused hardware repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -128,10 +124,8 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
-  <project path="external/colorkt" name="android_external_colorkt" remote="proton" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
-  <project path="external/themelib" name="android_external_themelib" remote="proton" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r48" />
 
@@ -159,6 +153,7 @@
   <project path="manifest" name="manifest" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
