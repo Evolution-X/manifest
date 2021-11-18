@@ -111,6 +111,8 @@
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
@@ -256,6 +258,8 @@
 
   <!-- System repos -->
   <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+  <project path="system/netd" name="system_netd" remote="evo" />
   <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
