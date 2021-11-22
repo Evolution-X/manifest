@@ -27,6 +27,10 @@
            fetch="https://github.com/ArrowOS"
            revision="refs/heads/arrow-12.0" />
 
+  <remote  name="arrow-devices"
+           fetch="https://github.com/ArrowOS-Devices"
+           revision="refs/heads/arrow-12.0" />
+
   <!-- Remove unused hardware repos -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -236,6 +240,7 @@
   <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8350" />
   <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8350" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="evo" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arrow-devices" />
 
   <!-- Packages repos -->
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
