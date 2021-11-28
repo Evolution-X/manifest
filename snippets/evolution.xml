@@ -130,7 +130,7 @@
 
   <!-- Device repos -->
   <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" revision="elle" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="evo" />
 
   <!-- External repos -->
