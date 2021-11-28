@@ -120,6 +120,7 @@
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/vold" />
 
   <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
   <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
@@ -268,6 +269,7 @@
   <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
+  <project path="system/vold" name="system_vold" remote="evo" />
 
   <!-- vendor repos -->
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
