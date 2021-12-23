@@ -112,6 +112,7 @@
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Nfc" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
@@ -119,6 +120,7 @@
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/security" />
@@ -254,6 +256,7 @@
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arrow-devices" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/GrapheneOS-Camera" name="packages_apps_GrapheneOS-Camera" remote="evo" />
@@ -275,6 +278,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
 
   <!-- System repos -->
+  <project path="system/bt" name="system_bt" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
   <project path="system/security" name="system_security" remote="evo" />
@@ -297,7 +301,11 @@
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
   <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arrow" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="arrow" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="arrow" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="arrow" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="arrow" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="arrow" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arrow" />
