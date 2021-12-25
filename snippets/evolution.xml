@@ -100,6 +100,7 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
@@ -107,6 +108,7 @@
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/packages/apps/Nfc" />
@@ -149,6 +151,7 @@
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
 
   <!-- General repos -->
+  <project path="art" name="art" remote="evo" />
   <project path="bionic" name="bionic" remote="evo" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
   <project path="build/make" name="build" remote="evo" >
