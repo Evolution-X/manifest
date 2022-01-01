@@ -105,6 +105,7 @@
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/external/fastrpc" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/libcxx" />
@@ -139,6 +140,7 @@
 
   <!-- External repos -->
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc" />
+  <project path="external/fastrpc" name="external_fastrpc" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc" />
