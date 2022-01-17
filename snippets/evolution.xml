@@ -25,7 +25,11 @@
 
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
-           revision="refs/heads/arrow-12.0" />
+	   revision="refs/heads/arrow-12.0" />
+
+  <remote  name="pixel-experience"
+	   fetch="https://github.com/PixelExperience"
+	   revision="refs/heads/twelve" />
 
   <remote  name="arrow-devices"
            fetch="https://github.com/ArrowOS-Devices"
@@ -248,9 +252,9 @@
   <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" remote="pixel-experience" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="pixel-experience" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" groups="qcom" remote="pixel-experience" revision="twelve" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="arrow" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="arrow" revision="arrow-12.0-caf" />
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arrow-devices" />
