@@ -19,16 +19,8 @@
            fetch="https://gitlab.com/EvoX"
            revision="refs/heads/snow" />
 
-  <remote  name="github/hentaiOS"
-           fetch="https://github.com/hentaiOS"
-           revision="refs/heads/SaltyIceCream" />
-
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
-           revision="refs/heads/arrow-12.0" />
-
-  <remote  name="arrow-devices"
-           fetch="https://github.com/ArrowOS-Devices"
            revision="refs/heads/arrow-12.0" />
 
   <!-- Remove unused hardware repos -->
@@ -248,12 +240,12 @@
   <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="arrow" revision="arrow-12.0-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom" remote="arrow" revision="arrow-12.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="PixelExperience/hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" remote="github" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/display" name="PixelExperience/hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="github" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/media" name="PixelExperience/hardware_qcom-caf_sm8350_media" groups="qcom" remote="github" revision="twelve" />
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="arrow" />
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="arrow" revision="arrow-12.0-caf" />
-  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="arrow-devices" />
+  <project path="hardware/xiaomi" name="ArrowOS-Devices/android_hardware_xiaomi" remote="github" revision="arrow-12.0" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
