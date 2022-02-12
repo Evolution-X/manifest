@@ -92,6 +92,7 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/bootable/recovery" />
@@ -145,6 +146,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
 
   <!-- General repos -->
   <project path="art" name="art" remote="evo" />
