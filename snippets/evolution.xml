@@ -116,6 +116,7 @@
   <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/system/media" />
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
@@ -277,6 +278,7 @@
   <project path="system/bt" name="system_bt" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+  <project path="system/media" name="system_media" remote="evo" />
   <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
