@@ -23,6 +23,10 @@
            fetch="https://github.com/hentaiOS"
            revision="refs/heads/Rika" />
 
+  <remote  name="pe-gitlab"
+           fetch="https://gitlab.pixelexperience.org/android"
+           revision="refs/heads/eleven" /> 
+
   <remote  name="octavi"
            fetch="https://github.com/Octavi-OS"
            revision="refs/heads/11" />
@@ -145,7 +149,7 @@
 
   <!-- External repos -->
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="evo" />
-  <project path="external/faceunlock" name="external_faceunlock" remote="evo" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
   <project path="external/guice" name="external_guice" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/lottie" name="external_lottie" remote="evo" />
