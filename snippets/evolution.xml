@@ -19,6 +19,10 @@
            fetch="https://gitlab.com/EvoX"
            revision="refs/heads/snow" />
 
+  <remote  name="pe-gitlab"
+           fetch="https://gitlab.pixelexperience.org/android"
+           revision="refs/heads/twelve" /> 
+
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
            revision="refs/heads/arrow-12.0" />
@@ -136,6 +140,7 @@
 
   <!-- External repos -->
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="pe-gitlab" />
   <project path="external/fastrpc" name="external_fastrpc" remote="evo" />
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
@@ -254,6 +259,7 @@
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="evo" />
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />
   <project path="packages/apps/GamingMode" name="packages_apps_GamingMode" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="evo" />
