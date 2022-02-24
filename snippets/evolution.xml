@@ -87,6 +87,7 @@
   <remove-project name="device/ti/beagle-x15-kernel" />
 
   <remove-project name="platform/hardware/broadcom/libbt" />
+  <remove-project name="platform/hardware/google/pixel" />
   <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
   <remove-project name="platform/hardware/qcom/display" />
@@ -175,6 +176,7 @@
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="evo" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="arrow" >
