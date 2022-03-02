@@ -107,6 +107,7 @@
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/openssh" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/hardware/interfaces" />
@@ -147,6 +148,7 @@
   <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/openssh" name="ProtonAOSP/android_external_openssh" remote="github" revision="sc" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/sqlite" name="external_sqlite" remote="evo" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
   <project path="external/tinyxml" name="platform/external/tinyxml" remote="aosp" revision="refs/tags/android-11.0.0_r48" />
