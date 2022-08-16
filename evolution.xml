@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- GitHub -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <!-- GitLab -->
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <!-- GitHub (Evolution X) -->
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/udc" />
+
+  <!-- GitHub (Evolution X Devices) -->
+  <remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           revision="refs/heads/udc" />
+
+  <!-- GitLab (Evolution X) -->
+  <remote  name="evo-gitlab"
+           fetch="https://gitlab.com/EvoX"
+           revision="refs/heads/udc" />
+
+  <!-- Device repos -->
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/qcom/common" name="PixelExperience-Devices/device_qcom_common" revision="thirteen" remote="github" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="evo" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="evo" />
+
+  <!-- External repos -->
+  <!--<project path="external/faceunlock" name="external_faceunlock" remote="evo-gitlab" />-->
+  <project path="external/cronet" name="external_cronet" remote="evo-gitlab" />
+  <project path="external/dtc" name="external_dtc" remote="evo" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="evo" />
+  <project path="external/libcxx" name="external_libcxx" remote="evo" />
+  <project path="external/libnl" name="external_libnl" remote="evo" />
+  <project path="external/mksh" name="external_mksh" remote="evo" />
+  <project path="external/piex" name="external_piex" remote="evo" />
+  <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="evo" />
+  <project path="external/zstd" name="external_zstd" remote="evo" />
+
+  <!-- Framework repos -->
+  <project path="frameworks/av" name="frameworks_av" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/libs/net" name="frameworks_libs_net" remote="evo" />
+  <!--project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />-->
+  <project path="frameworks/native" name="frameworks_native" remote="evo" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+
+  <!-- General repos -->
+  <project path="art" name="art" remote="evo" />
+  <project path="bionic" name="bionic" remote="evo" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
+  <project path="build/make" name="build" remote="evo" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <!--<project path="libcore" name="libcore" remote="evo" />-->
+  <project path="manifest" name="manifest" remote="evo" />
+
+  <!-- Hardware repos -->
+  <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+  <!--<project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />-->
+  <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom" revision="lineage-21.0" remote="github">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/bengal/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/bengal/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+    <!-- add guards for Pixel kernel modules -->
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs101/private/google-modules/Android.bp" />
+    <linkfile src="os_pickup.bp" dest="kernel/google/gs201/private/google-modules/Android.bp" />
+  </project>
+  <project path="hardware/qcom-caf/msm8996/audio" name="PixelExperience/hardware_qcom-caf_msm8996_audio" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/msm8996/display" name="hardware_qcom-caf_msm8996_display" groups="qcom,legacy-qcom" remote="evo" />
+  <project path="hardware/qcom-caf/msm8996/media" name="PixelExperience/hardware_qcom-caf_msm8996_media" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/msm8998/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,legacy-qcom" revision="lineage-20.0-caf-msm8998" remote="github" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" groups="qcom,legacy-qcom" remote="evo" />
+  <project path="hardware/qcom-caf/msm8998/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,legacy-qcom" revision="lineage-20.0-caf-msm8998" remote="github" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="hardware_qcom-caf_sdm660_audio" groups="qcom,sdm660" remote="evo" />
+  <project path="hardware/qcom-caf/sdm660/display" name="hardware_qcom-caf_sdm660_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom-caf_sdm660_media" groups="qcom,sdm660" remote="evo" />
+  <project path="hardware/qcom-caf/sdm845/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,sdm845" revision="lineage-20.0-caf-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sdm845/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,sdm845" revision="lineage-20.0-caf-sdm845" remote="github" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" groups="qcom,msmnile" remote="evo" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sm8150/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,msmnile" revision="lineage-20.0-caf-sm8150" remote="github" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" groups="qcom,kona" remote="evo" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sm8250/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,kona" revision="lineage-20.0-caf-sm8250" remote="github" />
+  <project path="hardware/qcom-caf/bengal/audio" name="PixelExperience/hardware_qcom-caf_bengal_audio" revision="thirteen" remote="github" />
+  <!--<project path="hardware/qcom-caf/bengal/display" name="hardware_qcom-caf_bengal_display" remote="evo" />-->
+  <project path="hardware/qcom-caf/bengal/gps" name="PixelExperience/hardware_qcom-caf_bengal_gps" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/bengal/media" name="PixelExperience/hardware_qcom-caf_bengal_media" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="PixelExperience/hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sm8350/media" name="PixelExperience/hardware_qcom-caf_sm8350_media" groups="qcom" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/sm8450/audio/agm" name="hardware_qcom-caf_sm8450_audio_agm" groups="qcom,waipio-vendor" remote="evo" />
+  <project path="hardware/qcom-caf/sm8450/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
+  <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="LineageOS/android_hardware_qcom_audio-ar" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
+  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom-caf_sm8450_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sm8450/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
+  <project path="hardware/qcom-caf/sm8550/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" groups="qcom,kailua-audio" revision="lineage-20.0-caf-sm8550" remote="github" />
+  <project path="hardware/qcom-caf/sm8550/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" groups="qcom,kailua-audio" revision="lineage-20.0-caf-sm8550" remote="github" />
+  <project path="hardware/qcom-caf/sm8550/audio/primary-hal" name="LineageOS/android_hardware_qcom_audio-ar" groups="qcom,kailua-audio" revision="lineage-20.0-caf-sm8550" remote="github" />
+  <project path="hardware/qcom-caf/sm8550/display" name="hardware_qcom-caf_sm8450_display" groups="qcom" remote="evo" />
+  <project path="hardware/qcom-caf/sm8550/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,kailua-vendor" revision="lineage-20.0-caf-sm8550" remote="github" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="evo" />
+  <project path="hardware/ril" name="hardware_ril" remote="evo" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="evo" />
+
+  <!-- Packages (Apps) repos -->
+  <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <!--<project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />-->
+  <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="evo" />
+  <project path="packages/apps/GCamGOPrebuilt" name="packages_apps_GCamGOPrebuilt" remote="evo" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
+  <!--project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="evo" />
+  <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="evo" />-->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
+  <!--<project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="evo" />-->
+  <project path="packages/apps/ParanoidGlyph" name="PixelExperience/packages_apps_ParanoidGlyph" revision="thirteen" remote="github" />
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <!--<project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />-->
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
+  <!--project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="evo" />-->
+
+  <!-- Packages (Modules) repos -->
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="evo" />
+  <project path="packages/modules/Bluetooth/android/BtHelper" name="TheParasiteProject/packages_modules_Bluetooth_android_BtHelper" revision="thirteen" remote="github" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo-gitlab" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="evo" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="evo" />
+  <!--<project path="packages/modules/adb" name="packages_modules_adb" remote="evo" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="evo" />-->
+
+  <!-- Packages (Providers) repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+
+  <!-- Packages (Resources) repos -->
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="evo" />
+
+  <!-- Packages (Services) repos -->
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+
+  <!-- System repos -->
+  <!--<project path="system/apex" name="system_apex" remote="evo" />-->
+  <project path="system/bpf" name="system_bpf" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/extras" name="system_extras" remote="evo" />
+  <project path="system/libhidl" name="system_libhidl" remote="evo" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+  <!--<project path="system/logging" name="system_logging" remote="evo" />-->
+  <project path="system/media" name="system_media" remote="evo" />
+  <!--<project path="system/memory/lmkd" name="system_memory_lmkd" remote="evo" />-->
+  <project path="system/netd" name="system_netd" remote="evo" />
+  <project path="system/security" name="system_security" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
+  <project path="system/update_engine" name="system_update_engine" remote="evo" />
+  <project path="system/vold" name="system_vold" remote="evo" />
+
+  <!-- Vendor repos -->
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms_new" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+  <!--<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />-->
+
+  <!-- Vendor repos - NXP -->
+  <!--<project path="vendor/nxp/nfc" name="PixelExperience/vendor_nxp_nfc" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="PixelExperience/vendor_nxp_opensource_interfaces_nfc" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="PixelExperience/vendor_nxp_opensource_commonsys_external_libnfc-nci" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="PixelExperience/vendor_nxp_opensource_commonsys_frameworks" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="PixelExperience/vendor_nxp_opensource_commonsys_packages_apps_Nfc" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="PixelExperience/vendor_nxp_opensource_pn5xx_halimpl" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="PixelExperience/vendor_nxp_opensource_pn5xx_hidlimpl" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="PixelExperience/vendor_nxp_opensource_sn100x_halimpl" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="PixelExperience/vendor_nxp_opensource_sn100x_hidlimpl" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/secure_element" name="PixelExperience/vendor_nxp_secure_element" revision="thirteen" remote="github" />
+  <project path="vendor/nxp/secure_element_extns" name="PixelExperience/vendor_nxp_secure_element_extns" revision="thirteen" remote="github" />-->
+
+  <!-- Vendor (Qcom) repos -->
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="evo" />
+  <!--<project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="evo" />-->
+  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="evo" />
+</manifest> 
