@@ -52,7 +52,6 @@
   <remove-project name="device/google/gs101-sepolicy" />
   <remove-project name="device/google/gs201" />
   <remove-project name="device/google/gs201-sepolicy" />
-  <remove-project name="device/google/gs-common" />
   <remove-project name="device/google/pantah" />
   <remove-project name="device/google/pantah-sepolicy" />
   <remove-project name="device/google/pantah-kernel" />
@@ -76,6 +75,7 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- External -->
+  <remove-project name="platform/external/android-nn-driver" />
   <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/exfatprogs" />
@@ -110,6 +110,10 @@
   <remove-project name="platform/libcore" />
 
   <!-- Hardware -->
+  <remove-project name="platform/hardware/google/gchips" />
+  <remove-project name="platform/hardware/google/graphics/common" />
+  <remove-project name="platform/hardware/google/pixel" />
+  <remove-project name="platform/hardware/google/pixel-sepolicy" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />

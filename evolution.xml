@@ -30,7 +30,7 @@
            revision="thirteen" />
 
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" revision="tiramisu-pixel" remote="evo" />
   <project path="device/qcom/common" name="PixelExperience-Devices/device_qcom_common" revision="thirteen" remote="github" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="evo" />
@@ -47,7 +47,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" revision="tiramisu-pixel" remote="evo" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="evo" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
@@ -58,7 +58,7 @@
   <project path="art" name="art" remote="evo" />
   <project path="bionic" name="bionic" remote="evo" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
-  <project path="build/make" name="build" remote="evo" groups="pdk" >
+  <project path="build/make" name="build" revision="tiramisu-pixel" remote="evo" groups="pdk">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -67,12 +67,12 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="libcore" name="libcore" remote="evo" />
-  <project path="manifest" name="manifest" remote="evo" />
+  <project path="manifest" name="manifest" revision="tiramisu-pixel" remote="evo" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
@@ -193,7 +193,7 @@
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="evo" />
-  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/core" name="system_core" revision="tiramisu-pixel" remote="evo" />
   <project path="system/extras" name="system_extras" remote="evo" />
   <project path="system/libhidl" name="system_libhidl" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
@@ -213,9 +213,9 @@
   <!-- Vendor repos -->
   <project path="vendor/bcr" name="vendor_bcr" remote="evo" />
   <project path="vendor/certification" name="vendor_certification" revision="tiramisu" remote="evo-gitlab" />
-  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/evolution" name="vendor_evolution" revision="tiramisu-pixel" remote="evo" />
   <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
-  <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" groups="vendor" revision="tiramisu-pixel" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 
   <!-- Vendor repos - NXP -->
