@@ -39,7 +39,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo" revision="tiramisu-pixel" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="evo" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
@@ -168,9 +168,9 @@
   <project path="system/vold" name="system_vold" remote="evo" />
 
   <!-- Vendor repos -->
-  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
+  <project path="vendor/evolution" name="vendor_evolution" revision="tiramisu-pixel" remote="evo" />
   <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
-  <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" groups="vendor" revision="tiramisu" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 
   <!-- Vendor repos - NXP -->
