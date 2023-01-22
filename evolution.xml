@@ -141,6 +141,7 @@
   <project path="packages/apps/GCamGOPrebuilt" name="packages_apps_GCamGOPrebuilt" remote="evo" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="evo" />
+  <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
