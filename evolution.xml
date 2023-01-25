@@ -170,7 +170,7 @@
   <!-- Vendor repos -->
   <project path="vendor/evolution" name="vendor_evolution" revision="tiramisu-pixel" remote="evo" />
   <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
-  <project path="vendor/gms" name="vendor_gms" groups="vendor" revision="tiramisu" remote="evo-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" groups="vendor" revision="tiramisu-pixel" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 
   <!-- Vendor repos - NXP -->
