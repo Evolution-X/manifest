@@ -62,4 +62,10 @@
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,waipio-vendor" remote="lineage" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,waipio-vendor" remote="lineage" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,waipio-video" remote="lineage" />
+
+  <project path="external/android-nn-driver" name="android_external_android-nn-driver" groups="pdk-lassen,pdk-gs-arm" remote="lineage" />
+  <project path="hardware/google/gchips" name="android_hardware_google_gchips" groups="pdk-lassen,pdk-gs-arm" remote="lineage" />
+  <project path="hardware/google/graphics/common" name="android_hardware_google_graphics_common" groups="pdk-lassen,pdk-gs-arm" remote="lineage" />
+  <project path="hardware/google/pixel" name="android_hardware_google_pixel" groups="generic_fs,pixel" remote="lineage" />
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="lineage" />
 </manifest>
