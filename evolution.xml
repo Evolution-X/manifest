@@ -25,7 +25,7 @@
            revision="refs/heads/tiramisu" />
 
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" revision="tiramisu-pixel" />
   <project path="device/qcom/common" name="PixelExperience-Devices/device_qcom_common" remote="github" revision="thirteen" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="evo" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="evo" />
