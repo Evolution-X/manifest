@@ -47,7 +47,7 @@
 
   <!-- General repos -->
   <project path="art" name="art" remote="evo" />
-  <project path="bionic" name="bionic" remote="evo" />
+  <project path="bionic" name="bionic" remote="evo" revision="tiramisu-pixel" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
   <project path="build/make" name="build" remote="evo" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
