@@ -40,6 +40,7 @@
   <project path="external/cldr" name="external_cldr" remote="evo" />
   <project path="external/faceunlock" name="external_faceunlock" revision="thirteen" remote="pe-gitlab" />
   <project path="external/icu" name="external_icu" remote="evo" />
+  <project path="external/jemalloc_new" name="BootleggersROM/external_jemalloc_new" revision="tirimbino" remote="github" />
   <project path="external/piex" name="external_piex" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
@@ -55,9 +56,9 @@
 
   <!-- General repos -->
   <project path="art" name="art" remote="evo" />
-  <project path="bionic" name="bionic" remote="evo" />
+  <project path="bionic" name="bionic" revision="tiramisu-jem" remote="evo" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
-  <project path="build/make" name="build" remote="evo" groups="pdk" >
+  <project path="build/make" name="build" revision="tiramisu-jem" remote="evo" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -66,16 +67,16 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" revision="tiramisu-jem" remote="evo" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="libcore" name="libcore" remote="evo" />
-  <project path="manifest" name="manifest" remote="evo" />
+  <project path="manifest" name="manifest" revision="tiramisu-jem" remote="evo" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
+  <project path="hardware/interfaces" name="hardware_interfaces" revision="tiramisu-jem" remote="evo" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
   <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom" revision="lineage-20.0" remote="github">
     <!-- add guard for AOSP hardware/qcom dir -->
@@ -173,7 +174,7 @@
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="evo" />
-  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/core" name="system_core" revision="tiramisu-jem" remote="evo" />
   <project path="system/extras" name="system_extras" remote="evo" />
   <project path="system/libhidl" name="system_libhidl" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
