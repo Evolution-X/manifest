@@ -81,6 +81,7 @@
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/icu" />
+  <remove-project name="platform/external/jemalloc_new" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/mksh" />
