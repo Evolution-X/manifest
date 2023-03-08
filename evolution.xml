@@ -41,6 +41,7 @@
   <project path="external/faceunlock" name="external_faceunlock" revision="thirteen" remote="pe-gitlab" />
   <project path="external/icu" name="external_icu" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
+  <project path="external/tigervnc" name="external_tigervnc" groups="pdk" remote="evo" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
 
   <!-- Framework repos -->
@@ -132,6 +133,7 @@
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="evo" />
 
   <!-- Packages (Apps) repos -->
+  <project path="packages/apps/DesktopMode" name="packages_apps_DesktopMode" groups="pdk-fs" remote="evo" />
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
   <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />
@@ -166,6 +168,7 @@
   <!-- Packages (Services) repos -->
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+  <project path="packages/services/VncFlinger" name="packages_services_VncFlinger" groups="pdk-cw-fs,pdk-fs" remote="evo" />
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="evo" />
