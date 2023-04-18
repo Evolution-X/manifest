@@ -45,6 +45,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="evo" />
   <project path="frameworks/base" name="frameworks_base" remote="evo" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="evo" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
 
@@ -127,13 +128,16 @@
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="evo" />
   <project path="packages/apps/GCamGOPrebuilt" name="packages_apps_GCamGOPrebuilt" remote="evo" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
   <project path="packages/apps/RevampedFMRadio" name="iusmac/RevampedFMRadio" revision="qcom" remote="github" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="evo" />
 
   <!-- Packages (Modules) repos -->
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="evo" />
