@@ -168,6 +168,7 @@
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="evo" />
   <project path="system/security" name="system_security" remote="evo" />
   <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
+  <project path="system/timezone" name="system_timezone" remote="evo" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
   <project path="system/vold" name="system_vold" remote="evo" />
