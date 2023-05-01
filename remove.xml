@@ -67,8 +67,10 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- External -->
+  <remove-project name="platform/external/cldr" />
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/selinux" />

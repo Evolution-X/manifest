@@ -37,7 +37,9 @@
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="evo" />
 
   <!-- External repos -->
+  <project path="external/cldr" name="external_cldr" remote="evo" />
   <project path="external/faceunlock" name="external_faceunlock" revision="thirteen" remote="pe-gitlab" />
+  <project path="external/icu" name="external_icu" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
 
