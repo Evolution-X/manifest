@@ -169,6 +169,7 @@
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="evo" />
   <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/extras" name="system_extras" remote="evo" />
   <project path="system/libhidl" name="system_libhidl" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
   <project path="system/logging" name="system_logging" remote="evo" />
