@@ -68,6 +68,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="libcore" name="libcore" remote="evo" />
   <project path="manifest" name="manifest" remote="evo" />
 
   <!-- Hardware repos -->
