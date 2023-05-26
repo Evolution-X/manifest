@@ -126,9 +126,9 @@
   <project path="hardware/qcom-caf/bengal/display" name="PixelExperience/hardware_qcom-caf_bengal_display" revision="thirteen" remote="github" />
   <project path="hardware/qcom-caf/bengal/gps" name="PixelExperience/hardware_qcom-caf_bengal_gps" revision="thirteen" remote="github" />
   <project path="hardware/qcom-caf/bengal/media" name="PixelExperience/hardware_qcom-caf_bengal_media" revision="thirteen" remote="github" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="lineage-20.0-caf-sm8350" remote="github" />
-  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" remote="evo" />
-  <project path="hardware/qcom-caf/sm8350/media" name="LineageOS/android_hardware_qcom_media" groups="qcom" revision="lineage-20.0-caf-sm8350" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="PixelExperience/hardware_qcom-caf_sm8350_audio" groups="qcom,qcom_audio" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/display" name="PixelExperience/hardware_qcom-caf_sm8350_display" groups="pdk,qcom,qcom_display" revision="thirteen" remote="github" />
+  <project path="hardware/qcom-caf/sm8350/media" name="PixelExperience/hardware_qcom-caf_sm8350_media" groups="qcom" revision="thirteen" remote="github" />
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="evo" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="evo" />
 
