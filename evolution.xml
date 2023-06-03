@@ -143,6 +143,7 @@
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="evo" />
   <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="evo" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="evo" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
