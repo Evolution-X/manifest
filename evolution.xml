@@ -47,8 +47,8 @@
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/av" name="frameworks_av" revision="tiramisu-wip" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" revision="tiramisu-wip" remote="evo" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="evo" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />
   <project path="frameworks/native" name="frameworks_native" remote="evo" />
@@ -142,7 +142,7 @@
   <project path="hardware/qcom-caf/sm8450/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
   <project path="hardware/qcom-caf/sm8450/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
   <project path="hardware/qcom-caf/sm8450/audio/primary-hal" name="LineageOS/android_hardware_qcom_audio-ar" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
-  <project path="hardware/qcom-caf/sm8450/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-20.0-caf-sm8450" remote="github" />
+  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom-caf_sm8450_display" groups="pdk,qcom,qcom_display" remote="evo" />
   <project path="hardware/qcom-caf/sm8450/media" name="LineageOS/android_hardware_qcom_media" groups="qcom,waipio-vendor" revision="lineage-20.0-caf-sm8450" remote="github" />
   <project path="hardware/qcom-caf/sm8550/audio/agm" name="LineageOS/android_vendor_qcom_opensource_agm" groups="qcom,kailua-audio" revision="lineage-20.0-caf-sm8550" remote="github" />
   <project path="hardware/qcom-caf/sm8550/audio/pal" name="LineageOS/android_vendor_qcom_opensource_arpal-lx" groups="qcom,kailua-audio" revision="lineage-20.0-caf-sm8550" remote="github" />
