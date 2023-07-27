@@ -233,5 +233,6 @@
   <project path="vendor/nxp/secure_element_extns" name="PixelExperience/vendor_nxp_secure_element_extns" revision="thirteen" remote="github" />
 
   <!-- Vendor (Qcom) repos -->
+  <project path="vendor/qcom/common" name="vendor-blobs/vendor_qcom_common" revision="thirteen" remote="pe-gitlab" />
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="evo" />
 </manifest> 
