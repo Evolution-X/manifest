@@ -170,6 +170,7 @@
 
   <!-- Packages (Modules) repos -->
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="evo" />
+  <project path="packages/modules/Bluetooth/android/BtHelper" name="TheParasiteProject/packages_modules_Bluetooth_android_BtHelper" revision="thirteen" remote="github" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="evo" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="evo" />
