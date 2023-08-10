@@ -163,7 +163,6 @@
   <project path="packages/apps/ParanoidGlyph" name="PixelExperience/packages_apps_ParanoidGlyph" revision="thirteen" remote="github" />
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" revision="main" remote="github" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
-  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="evo" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
