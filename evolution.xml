@@ -38,7 +38,7 @@
 
   <!-- External repos -->
   <project path="external/cldr" name="external_cldr" remote="evo" />
-  <project path="external/faceunlock" name="external_faceunlock" revision="thirteen" remote="pe-gitlab" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="evo-gitlab" />
   <project path="external/icu" name="external_icu" remote="evo" />
   <project path="external/piex" name="external_piex" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
