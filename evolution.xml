@@ -226,5 +226,4 @@
 
   <!-- Vendor (Qcom) repos -->
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" remote="evo" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="arrow-13.0" remote="github" />
 </manifest> 
