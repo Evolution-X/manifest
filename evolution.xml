@@ -77,6 +77,7 @@
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />
   <project path="hardware/qcom-caf/common" name="LineageOS/android_hardware_qcom-caf_common" groups="qcom" revision="lineage-20.0" remote="github">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />

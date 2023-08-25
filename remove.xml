@@ -108,6 +108,7 @@
   <!-- Hardware -->
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/libhardware_legacy" />
 
   <!-- Hardware (Qcom) -->
   <remove-project name="platform/hardware/qcom/audio" />
