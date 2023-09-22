@@ -21,6 +21,7 @@
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" groups="qcom,sdm660" remote="lineage" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" groups="qcom,sdm660" remote="lineage" />
   <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" groups="qcom,qssi" remote="lineage" />
+  <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" groups="pdk" remote="lineage" />
   <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="lineage" />

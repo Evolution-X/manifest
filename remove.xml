@@ -77,6 +77,7 @@
 
   <!-- External -->
   <remove-project name="platform/external/cldr" />
+  <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/icu" />
