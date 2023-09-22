@@ -95,6 +95,7 @@
   <remove-project name="platform/frameworks/libs/net" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/colorpicker" />
   <remove-project name="platform/frameworks/opt/net/ims" />
   <remove-project name="platform/frameworks/opt/telephony" />
 
