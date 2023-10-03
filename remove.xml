@@ -82,6 +82,7 @@
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/icu" />
   <remove-project name="platform/external/libcxx" />
+  <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/piex" />
   <remove-project name="platform/external/selinux" />
@@ -159,4 +160,5 @@
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
+  <remove-project name="platform/tools/apksig" />
 </manifest>

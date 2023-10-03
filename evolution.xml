@@ -40,6 +40,7 @@
   <project path="external/cldr" name="external_cldr" remote="evo" />
   <project path="external/faceunlock" name="external_faceunlock" remote="evo-gitlab" />
   <project path="external/icu" name="external_icu" remote="evo" />
+  <project path="external/libxml2" name="yaap/external_libxml2" revision="thirteen" remote="github" />
   <project path="external/piex" name="external_piex" remote="evo" />
   <project path="external/selinux" name="external_selinux" remote="evo" />
   <project path="external/tinycompress" name="external_tinycompress" remote="evo" />
@@ -205,6 +206,8 @@
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
   <project path="system/update_engine" name="system_update_engine" remote="evo" />
   <project path="system/vold" name="system_vold" remote="evo" />
+
+  <project path="tools/apksig" name="yaap/tools_apksig" revision="thirteen" remote="github" />
 
   <!-- Vendor repos -->
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
