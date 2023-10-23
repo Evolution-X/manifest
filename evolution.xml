@@ -39,6 +39,11 @@
            revision="refs/heads/udc-p" />
 
   <!-- GitHub (Evolution X) -->
+  <remote  name="evo-2-pixel"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/uqpr2-p" />
+
+  <!-- GitHub (Evolution X) -->
   <remote  name="evo-jemalloc"
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/udc-j" />
@@ -54,7 +59,7 @@
            revision="refs/heads/uqpr2" />
 
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-2" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-2-pixel" />
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="evo-2" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="evo" /> 
 
@@ -89,7 +94,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!--<project path="libcore" name="libcore" remote="evo" />-->
-  <project path="manifest" name="manifest" remote="evo-2" />
+  <project path="manifest" name="manifest" remote="evo-2-pixel" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo-2" />
@@ -144,7 +149,7 @@
 
   <!-- System repos -->
   <!--<project path="system/apex" name="system_apex" remote="evo" />-->
-  <project path="system/core" name="system_core" remote="evo-2" />
+  <project path="system/core" name="system_core" remote="evo-2-pixel" />
   <project path="system/extras" name="system_extras" remote="evo-2" />
   <project path="system/libhidl" name="system_libhidl" remote="evo-2" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo-2" />
@@ -163,6 +168,6 @@
   <project path="vendor/certification" name="vendor_certification" remote="evo-bb" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo-2" />
   <project path="vendor/google/interfaces" name="TheParasiteProject/vendor_google_interfaces" revision="main" remote="github" />
-  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-bb-2" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" revision="uqpr2-p" remote="evo-bb-2" clone-depth="1" />
   <!--<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />-->
 </manifest> 
