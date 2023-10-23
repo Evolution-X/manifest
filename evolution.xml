@@ -44,7 +44,7 @@
            revision="refs/heads/udc" />
 
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-pixel" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="evo" /> 
 
   <!-- External repos -->
@@ -76,7 +76,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!--<project path="libcore" name="libcore" remote="evo" />-->
-  <project path="manifest" name="manifest" remote="evo" />
+  <project path="manifest" name="manifest" remote="evo-pixel" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
@@ -132,7 +132,7 @@
 
   <!-- System repos -->
   <!--<project path="system/apex" name="system_apex" remote="evo" />-->
-  <project path="system/core" name="system_core" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo-pixel" />
   <project path="system/extras" name="system_extras" remote="evo" />
   <project path="system/libhidl" name="system_libhidl" remote="evo" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
@@ -153,6 +153,6 @@
   <project path="vendor/certification" name="vendor_certification" remote="evo-bb" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/google/interfaces" name="TheParasiteProject/vendor_google_interfaces" revision="14.0" remote="github" />
-  <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-bb" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" groups="vendor" revision="udc-p" remote="evo-bb" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
 </manifest> 
