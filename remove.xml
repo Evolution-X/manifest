@@ -77,15 +77,19 @@
   <remove-project name="platform/prebuilts/go/darwin-x86" />
 
   <!-- External -->
+  <remove-project name="platform/external/android-nn-driver" />
+  <remove-project name="platform/external/armnn" />
   <remove-project name="platform/external/cronet" />
   <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/libnl" />
+  <remove-project name="platform/external/libvpx" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/piex" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/webp" />
   <remove-project name="platform/external/wpa_supplicant_8" />
   <remove-project name="platform/external/zstd" />
 
@@ -93,6 +97,7 @@
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
+  <remove-project name="platform/frameworks/opt/calendar" />
   <remove-project name="platform/frameworks/opt/colorpicker" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/frameworks/opt/timezonepicker" />
@@ -112,13 +117,6 @@
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/ril" />
-
-  <!-- Hardware (Qcom) -->
-  <remove-project name="platform/hardware/qcom/audio" />
-  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
-  <remove-project name="platform/hardware/qcom/display" />
-  <remove-project name="platform/hardware/qcom/gps" />
-  <remove-project name="platform/hardware/qcom/media" />
 
   <!-- Packages (Apps) -->
   <remove-project name="platform/packages/apps/Nfc" />

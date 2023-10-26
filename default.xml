@@ -792,7 +792,6 @@
   <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" />
   <project path="external/tinyalsa_new" name="platform/external/tinyalsa_new" groups="pdk" />
   <project path="external/tinycompress" name="platform/external/tinycompress" groups="pdk" />
-  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r48" />
   <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="pdk" />
   <project path="external/toolchain-utils" name="platform/external/toolchain-utils" />
   <project path="external/toybox" name="platform/external/toybox" groups="pdk" />
@@ -903,23 +902,6 @@
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom,qcom_keymaster,pdk-qcom" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom,pdk-qcom" />
   <project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="qcom,pdk-qcom" />
-  <project path="hardware/qcom/sm7150/gps" name="platform/hardware/qcom/sm7150/gps" groups="qcom_sm7150" >
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7150/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7150/Android.bp" />
-  </project>
-  <project path="hardware/qcom/sm7250/display" name="LineageOS/android_hardware_qcom_sm7250_display" groups="qcom,qcom_sm7250" revision="lineage-20.0" remote="github" />
-  <project path="hardware/qcom/sm7250/gps" name="LineageOS/android_hardware_qcom_sm7250_gps" groups="qcom,qcom_sm7250" revision="lineage-20.0" remote="github">
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm7250/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm7250/Android.bp" />
-  </project>
-  <project path="hardware/qcom/sm7250/media" name="LineageOS/android_hardware_qcom_sm7250_media" groups="qcom,qcom_sm7250" revision="lineage-20.0" remote="github" />
-  <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" groups="qcom_sm8150" >
-    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
-    <linkfile src="os_pickup.bp" dest="hardware/qcom/sm8150/Android.bp" />
-  </project>
-  <project path="hardware/qcom/sm8150/display" name="LineageOS/android_hardware_qcom_sm8150_display" groups="qcom,qcom_sm8150" revision="lineage-20.0" remote="github" />
-  <project path="hardware/qcom/sm8150/gps" name="platform/hardware/qcom/sm8150/gps" groups="qcom_sm8150" />
-  <project path="hardware/qcom/sm8150/media" name="LineageOS/android_hardware_qcom_sm8150_media" groups="qcom,qcom_sm8150" revision="lineage-20.0" remote="github" />
   <project path="hardware/qcom/sm8150/thermal" name="platform/hardware/qcom/sm8150/thermal" groups="qcom_sm8150" />
   <project path="hardware/qcom/sm8150/vr" name="platform/hardware/qcom/sm8150/vr" groups="qcom_sm8150" />
   <project path="hardware/qcom/sm8150p/gps" name="platform/hardware/qcom/sm8150p/gps" groups="qcom_sm8150p" >
