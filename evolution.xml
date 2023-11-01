@@ -31,7 +31,6 @@
   <!-- External repos -->
   <!--<project path="external/faceunlock" name="external_faceunlock" remote="evo-gitlab" />-->
   <project path="external/cronet" name="PixelExperience-Staging/external_cronet" revision="fourteen" remote="github" />
-  <project path="external/libcxx" name="external_libcxx" remote="evo" />
   <project path="external/piex" name="external_piex" remote="evo" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="evo" />
 
