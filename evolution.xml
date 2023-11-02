@@ -68,6 +68,9 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
   <!--<project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />-->
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="evo" />
+  <project path="hardware/qcom-caf/sdm660/audio" name="hardware_qcom-caf_sdm660_audio" groups="qcom,sdm660" remote="evo" />
+  <project path="hardware/qcom-caf/sdm660/display" name="hardware_qcom-caf_sdm660_display" groups="qcom,sdm660" remote="evo" />
+  <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom-caf_sdm660_media" groups="qcom,sdm660" remote="evo" />
 
   <!-- Packages (Apps) repos -->
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
