@@ -210,6 +210,7 @@
   <project path="tools/apksig" name="yaap/tools_apksig" revision="thirteen" remote="github" />
 
   <!-- Vendor repos -->
+  <project path="vendor/bcr" name="vendor_bcr" remote="evo" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-gitlab" clone-depth="1" />
