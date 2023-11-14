@@ -30,6 +30,7 @@
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/rsync" name="android_external_rsync" remote="lineage" />
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
+  <project path="external/webp" name="android_external_webp" remote="lineage" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" groups="pdk" remote="lineage" />
   <project path="external/zstd" name="android_external_zstd" remote="lineage" />
 
@@ -50,6 +51,11 @@
   <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="qcom,sdm660" remote="lineage" />
 
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="lineage" />
+  <project path="packages/modules/DnsResolver" name="android_packages_modules_DnsResolver" remote="lineage" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" remote="lineage" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="lineage" />
+
+  <project path="system/ca-certificates" name="android_system_ca-certificates" remote="lineage" />
 
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="lineage" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="lineage" />
