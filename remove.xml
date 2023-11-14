@@ -122,6 +122,7 @@
   <remove-project name="platform/hardware/qcom/media" />
 
   <!-- Packages (Apps) -->
+  <remove-project name="platform/packages/apps/KeyChain" />
   <remove-project name="platform/packages/apps/ManagedProvisioning" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Nfc" />
