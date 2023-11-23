@@ -34,14 +34,14 @@
            revision="refs/heads/udc" />
 
   <!-- GitHub (Evolution X) -->
-  <remote  name="evo-pixel"
+  <remote  name="evo-2-p"
            fetch="https://github.com/Evolution-X"
-           revision="refs/heads/udc-p" />
+           revision="refs/heads/uqpr2-p" />
 
   <!-- GitHub (Evolution X) -->
-  <remote  name="evo-jemalloc"
+  <remote  name="evo-2-j"
            fetch="https://github.com/Evolution-X"
-           revision="refs/heads/udc-j" />
+           revision="refs/heads/uqpr2-j" />
 
   <!-- Bitbucket (Evolution X) -->
   <remote  name="evo-bb"
@@ -73,9 +73,9 @@
 
   <!-- General repos -->
   <project path="art" name="art" remote="evo-2" />
-  <project path="bionic" name="bionic" remote="evo-2" />
+  <project path="bionic" name="bionic" remote="evo-2-j" />
   <project path="bootable/recovery" name="bootable_recovery" remote="evo-2" />
-  <project path="build/make" name="build" remote="evo-2" groups="pdk" >
+  <project path="build/make" name="build" remote="evo-2-j" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -84,12 +84,12 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="evo-2" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" remote="evo-2-j" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!--<project path="libcore" name="libcore" remote="evo" />-->
-  <project path="manifest" name="manifest" remote="evo-2" />
+  <project path="manifest" name="manifest" remote="evo-2-j" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo-2" />
@@ -144,7 +144,7 @@
 
   <!-- System repos -->
   <!--<project path="system/apex" name="system_apex" remote="evo" />-->
-  <project path="system/core" name="system_core" remote="evo-2" />
+  <project path="system/core" name="system_core" remote="evo-2-j" />
   <project path="system/extras" name="system_extras" remote="evo-2" />
   <project path="system/libhidl" name="system_libhidl" remote="evo-2" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo-2" />
