@@ -212,7 +212,7 @@
 
   <!-- Vendor repos -->
   <project path="vendor/bcr" name="vendor_bcr" remote="evo" />
-  <project path="vendor/certification" name="vendor_certification" revision="udc" remote="evo-gitlab" />
+  <project path="vendor/certification" name="vendor_certification" revision="tiramisu" remote="evo-gitlab" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
   <project path="vendor/firmware" name="vendor_firmware" remote="evo-gitlab" clone-depth="1" />
   <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-gitlab" clone-depth="1" />
