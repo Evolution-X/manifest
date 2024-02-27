@@ -113,6 +113,7 @@
   <project path="packages/modules/Bluetooth/android/BtHelper" name="TheParasiteProject/packages_modules_Bluetooth_android_BtHelper" revision="14.0" remote="github" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo-bb" />
   <project path="packages/modules/Permission" name="packages_modules_Permission" remote="evo" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="evo" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="evo" />
   <project path="packages/modules/adb" name="packages_modules_adb" remote="evo" />
   <project path="packages/modules/common" name="packages_modules_common" remote="evo" />
