@@ -18,6 +18,11 @@
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/udc" />
 
+  <!-- GitHub (Evolution X) -->
+  <remote  name="evo-2"
+           fetch="https://github.com/Evolution-X"
+           revision="refs/heads/uqpr2" />
+
   <!-- GitHub (Evolution X Devices) -->
   <remote  name="evo-devices"
            fetch="https://github.com/Evolution-X-Devices"
@@ -43,26 +48,34 @@
            fetch="https://bitbucket.org/evo-x/"
            revision="refs/heads/udc" />
 
+  <!-- Bitbucket (Evolution X) -->
+  <remote  name="evo-bb-2"
+           fetch="https://bitbucket.org/evo-x/"
+           revision="refs/heads/uqpr2" />
+
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-2" />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="evo-2" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="evo" /> 
 
   <!-- External repos -->
   <project path="external/piex" name="external_piex" remote="evo" />
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="evo" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="evo-2" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="evo-2" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="evo" />
-  <project path="frameworks/base" name="frameworks_base" remote="evo" />
+  <project path="frameworks/av" name="frameworks_av" remote="evo-2" />
+  <project path="frameworks/base" name="frameworks_base" remote="evo-2" />
   <!--<project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="evo" />-->
-  <project path="frameworks/native" name="frameworks_native" remote="evo" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" remote="evo-2" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="evo-2" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="evo-2" />
 
   <!-- General repos -->
-  <project path="art" name="art" remote="evo" />
-  <project path="bionic" name="bionic" remote="evo" />
-  <project path="bootable/recovery" name="bootable_recovery" remote="evo" />
-  <project path="build/make" name="build" remote="evo" groups="pdk" >
+  <project path="art" name="art" remote="evo-2" />
+  <project path="bionic" name="bionic" remote="evo-2" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="evo-2" />
+  <project path="build/make" name="build" remote="evo-2" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -71,18 +84,16 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" remote="evo" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" remote="evo-2" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!--<project path="libcore" name="libcore" remote="evo" />-->
-  <project path="manifest" name="manifest" remote="evo" />
+  <project path="manifest" name="manifest" remote="evo-2" />
 
   <!-- Hardware repos -->
-  <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo" />
-  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="evo" />
-  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="evo" />
+  <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo-2" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="evo-2" />
   <!--<project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="evo" />-->
   <project path="hardware/qcom-caf/sdm660/audio" name="hardware_qcom-caf_sdm660_audio" groups="qcom,sdm660" remote="evo" />
   <project path="hardware/qcom-caf/sdm660/display" name="hardware_qcom-caf_sdm660_display" groups="qcom,sdm660" remote="evo" />
@@ -91,17 +102,17 @@
 
   <!-- Packages (Apps) repos -->
   <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
-  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo-2" />
   <project path="packages/apps/GCamGOPrebuilt" name="packages_apps_GCamGOPrebuilt" remote="evo" />
-  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
+  <!--<project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />-->
   <project path="packages/apps/Gramophone" name="TheParasiteProject/packages_apps_Gramophone" revision="14.0" remote="github" />
   <!--<project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="evo" />
   <project path="packages/apps/ManagedProvisioning" name="packages_apps_ManagedProvisioning" remote="evo" />-->
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo" />
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="evo-2" />
   <project path="packages/apps/ParanoidGlyph" name="PixelExperience/packages_apps_ParanoidGlyph" revision="thirteen" remote="github" />
-  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="evo-bb" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="evo-bb-2" />
   <project path="packages/apps/Pif" name="packages_apps_Pif" remote="evo" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="evo-2" />
   <!--<project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="evo" />-->
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="evo" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="evo" />
@@ -109,41 +120,40 @@
   <!--<project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="evo" />-->
 
   <!-- Packages (Modules) repos -->
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="evo" />
-  <project path="packages/modules/Bluetooth/android/BtHelper" name="TheParasiteProject/packages_modules_Bluetooth_android_BtHelper" revision="14.0" remote="github" />
-  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo-bb" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="evo" />
-  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="evo" />
-  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="evo" />
-  <project path="packages/modules/adb" name="packages_modules_adb" remote="evo" />
-  <project path="packages/modules/common" name="packages_modules_common" remote="evo" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="evo-2" />
+  <project path="packages/modules/Bluetooth/android/BtHelper" name="TheParasiteProject/packages_modules_Bluetooth_android_BtHelper" revision="main" remote="github" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="evo-bb-2" />
+  <project path="packages/modules/NetworkStack" name="packages_modules_NetworkStack" remote="evo-2" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="evo-2" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="evo-2" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="evo-2" />
+  <project path="packages/modules/adb" name="packages_modules_adb" remote="evo-2" />
+  <project path="packages/modules/common" name="packages_modules_common" remote="evo-2" />
 
   <!-- Packages (Providers) repos -->
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="evo-2" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="evo-2" />
 
   <!-- Packages (Resources) repos -->
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="evo" />
 
   <!-- Packages (Services) repos -->
   <!--project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="evo" />-->
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="evo-2" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo-2" />
 
   <!-- System repos -->
   <!--<project path="system/apex" name="system_apex" remote="evo" />-->
-  <project path="system/core" name="system_core" remote="evo" />
-  <project path="system/extras" name="system_extras" remote="evo" />
-  <project path="system/libhidl" name="system_libhidl" remote="evo" />
-  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
-  <project path="system/logging" name="system_logging" remote="evo" />
-  <project path="system/media" name="system_media" remote="evo" />
+  <project path="system/core" name="system_core" remote="evo-2" />
+  <project path="system/extras" name="system_extras" remote="evo-2" />
+  <project path="system/libhidl" name="system_libhidl" remote="evo-2" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo-2" />
+  <project path="system/logging" name="system_logging" remote="evo-2" />
+  <project path="system/media" name="system_media" remote="evo-2" />
   <!--<project path="system/memory/lmkd" name="system_memory_lmkd" remote="evo" />-->
-  <project path="system/security" name="system_security" remote="evo" />
-  <project path="system/sepolicy" name="system_sepolicy" remote="evo" />
-  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo" />
-  <project path="system/update_engine" name="system_update_engine" remote="evo" />
-  <project path="system/vold" name="system_vold" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="evo-2" />
+  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" remote="evo-2" />
+  <project path="system/update_engine" name="system_update_engine" remote="evo-2" />
 
   <!-- Tools -->
   <project path="evolution/scripts" name="scripts" remote="evo" />
@@ -151,8 +161,8 @@
   <!-- Vendor repos -->
   <project path="vendor/bcr" name="vendor_bcr" remote="evo" />
   <project path="vendor/certification" name="vendor_certification" remote="evo-bb" />
-  <project path="vendor/evolution" name="vendor_evolution" remote="evo" />
-  <project path="vendor/google/interfaces" name="TheParasiteProject/vendor_google_interfaces" revision="14.0" remote="github" />
-  <project path="vendor/gms" name="vendor_gms" groups="vendor" remote="evo-bb" clone-depth="1" />
-  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
+  <project path="vendor/evolution" name="vendor_evolution" remote="evo-2" />
+  <project path="vendor/google/interfaces" name="TheParasiteProject/vendor_google_interfaces" revision="main" remote="github" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-bb-2" clone-depth="1" />
+  <!--<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />-->
 </manifest> 

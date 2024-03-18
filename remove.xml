@@ -13,7 +13,6 @@
   <remove-project name="device/generic/mini-emulator-x86" />
   <remove-project name="device/generic/mini-emulator-x86_64" />
   <remove-project name="device/generic/opengl-transport" />
-  <remove-project name="device/generic/qemu" />
   <remove-project name="device/generic/trusty" />
   <remove-project name="device/generic/uml" />
   <remove-project name="device/generic/x86" />
@@ -70,8 +69,6 @@
   <remove-project name="device/linaro/poplar" />
   <remove-project name="device/linaro/poplar-kernel" />
   <remove-project name="device/sample" />
-  <remove-project name="device/ti/beagle-x15" />
-  <remove-project name="device/ti/beagle-x15-kernel" />
 
   <remove-project name="kernel/configs" />
 
@@ -101,6 +98,7 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/calendar" />
   <remove-project name="platform/frameworks/opt/colorpicker" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/frameworks/opt/timezonepicker" />
 
@@ -118,6 +116,7 @@
   <remove-project name="platform/hardware/google/pixel-sepolicy" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/qcom/wlan" />
   <remove-project name="platform/hardware/ril" />
 
   <!-- Packages (Apps) -->
@@ -127,6 +126,7 @@
   <!-- Packages (Modules) -->
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Connectivity" />
+  <remove-project name="platform/packages/modules/NetworkStack" />
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/StatsD" />
   <remove-project name="platform/packages/modules/Wifi" />

@@ -13,7 +13,6 @@
   <project path="external/libnl" name="android_external_libnl" groups="pdk" remote="lineage" />
   <project path="external/libvpx" name="android_external_libvpx" remote="lineage" />
   <project path="external/mksh" name="android_external_mksh" remote="lineage" />
-  <project path="external/tinycompress" name="android_external_tinycompress" remote="lineage" />
   <project path="external/webp" name="android_external_webp" remote="lineage" />
   <project path="external/zstd" name="android_external_zstd" remote="lineage" />
   <project path="frameworks/opt/calendar" name="android_frameworks_opt_calendar" remote="lineage" />
@@ -22,9 +21,15 @@
   <project path="hardware/google/gchips" name="android_hardware_google_gchips" remote="lineage" />
   <project path="hardware/google/graphics/common" name="android_hardware_google_graphics_common" remote="lineage" />
   <project path="hardware/google/pixel" name="android_hardware_google_pixel" remote="lineage" />
+  <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="lineage" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="lineage" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="lineage" revision="lineage-21" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="lineage" />
   <project path="hardware/ril" name="android_hardware_ril" remote="lineage" />
   <project path="kernel/configs" name="android_kernel_configs" remote="lineage" />
   <project path="system/bpf" name="android_system_bpf" remote="lineage" />
+  <project path="system/security" name="android_system_security" remote="lineage" />
+  <project path="system/vold" name="android_system_vold" remote="lineage" />
 
   <!-- Legacy AOSP additions -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />

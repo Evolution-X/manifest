@@ -1,4 +1,4 @@
-![Evolution X](https://github.com/Evolution-X/manifest/raw/udc/EvoBanner.png)
+![Evolution X](https://github.com/Evolution-X/manifest/raw/uqpr2/EvoBanner.png)
 
 Evolution X
 ===========
@@ -13,17 +13,17 @@ Please choose one of the following manifest branches
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/Evolution-X/manifest -b udc
+repo init -u https://github.com/Evolution-X/manifest -b uqpr2
 ```
 
 - If you are compiling for a Google Pixel device:
 ```bash
-repo init -u https://github.com/Evolution-X/manifest -b udc-p
+repo init -u https://github.com/Evolution-X/manifest -b uqpr2-p
 ```
 
 - If you are compiling for a non-pixel device and would like to use the jemalloc memory allocator:
 ```bash
-repo init -u https://github.com/Evolution-X/manifest -b udc-j
+repo init -u https://github.com/Evolution-X/manifest -b uqpr2-j
 ```
 
 Once you have chosen a source branch, you can proceed with the synchronization using the following command:
@@ -64,7 +64,7 @@ This section comprises a list of available build flags that allow the inclusion 
 
 - Flags not listed here & more information regarding listed flags
 
-[Soong](https://github.com/Evolution-X/vendor_evolution/blame/udc/config/BoardConfigSoong.mk) | [Kernel](https://github.com/Evolution-X/vendor_evolution/blame/udc/config/BoardConfigKernel.mk)
+[Soong](https://github.com/Evolution-X/vendor_evolution/blame/uqpr2/config/BoardConfigSoong.mk) | [Kernel](https://github.com/Evolution-X/vendor_evolution/blame/uqpr2/config/BoardConfigKernel.mk)
 
 
 ### Evolution X Configuration Files ###
@@ -75,14 +75,14 @@ This section includes a list of configuration files containing overlayable resou
 
 | Configuration File                       | Description                                    |
 |------------------------------------------|------------------------------------------------|
-| [AOSP FWB core config](https://github.com/Evolution-X/frameworks_base/blob/udc/core/res/res/values/config.xml) | Overlayable resources for AOSP FWB core features |
-| [Evolution FWB core config](https://github.com/Evolution-X/frameworks_base/blob/udc/core/res/res/values/evolution_config.xml) | Overlayable resources for Evolution X FWB core features |
-| [AOSP FWB SystemUI config](https://github.com/Evolution-X/frameworks_base/blob/udc/packages/SystemUI/res/values/config.xml) | Overlayable resources for AOSP FWB SystemUI features |
-| [Evolution SystemUI config](https://github.com/Evolution-X/frameworks_base/blob/udc/packages/SystemUI/res/values/evolution_config.xml) | Overlayable resources for Evolution X FWB SystemUI features |
-| [AOSP Settings config](https://github.com/Evolution-X/packages_apps_Settings/blob/udc/res/values/config.xml) | Overlayable resources for AOSP Settings features |
-| [Evolution Settings config](https://github.com/Evolution-X/packages_apps_Settings/blob/udc/res/values/evolution_config.xml) | Overlayable resources for Evolution X Settings features |
-| [Evolution Settings strings](https://github.com/Evolution-X/packages_apps_Settings/blob/udc/res/values/evolution_strings.xml) | Overlayable string resources for Evolution X Settings |
-| [ AOSP/Evolution SettingsProvider defaults](https://github.com/Evolution-X/frameworks_base/blob/udc/packages/SettingsProvider/res/values/defaults.xml) | Overlayable resources for AOSP/Evolution X SettingsProvider feature defaults |
+| [AOSP FWB core config](https://github.com/Evolution-X/frameworks_base/blob/uqpr2/core/res/res/values/config.xml) | Overlayable resources for AOSP FWB core features |
+| [Evolution FWB core config](https://github.com/Evolution-X/frameworks_base/blob/uqpr2/core/res/res/values/evolution_config.xml) | Overlayable resources for Evolution X FWB core features |
+| [AOSP FWB SystemUI config](https://github.com/Evolution-X/frameworks_base/blob/uqpr2/packages/SystemUI/res/values/config.xml) | Overlayable resources for AOSP FWB SystemUI features |
+| [Evolution SystemUI config](https://github.com/Evolution-X/frameworks_base/blob/uqpr2/packages/SystemUI/res/values/evolution_config.xml) | Overlayable resources for Evolution X FWB SystemUI features |
+| [AOSP Settings config](https://github.com/Evolution-X/packages_apps_Settings/blob/uqpr2/res/values/config.xml) | Overlayable resources for AOSP Settings features |
+| [Evolution Settings config](https://github.com/Evolution-X/packages_apps_Settings/blob/uqpr2/res/values/evolution_config.xml) | Overlayable resources for Evolution X Settings features |
+| [Evolution Settings strings](https://github.com/Evolution-X/packages_apps_Settings/blob/uqpr2/res/values/evolution_strings.xml) | Overlayable string resources for Evolution X Settings |
+| [ AOSP/Evolution SettingsProvider defaults](https://github.com/Evolution-X/frameworks_base/blob/uqpr2/packages/SettingsProvider/res/values/defaults.xml) | Overlayable resources for AOSP/Evolution X SettingsProvider feature defaults |
 
 
 ### Build ###
