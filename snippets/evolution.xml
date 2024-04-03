@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/udc" />
+
+  <remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/udc" />
+
+  <remote  name="github-non-los"
+           sync-c="true"
+           sync-j="4"
+           fetch="https://github.com" />
+
+  <!-- Art -->
+  <project path="art" name="art" groups="pdk" remote="evo" />
+
+  <!-- Bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="evo" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="evo" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="evo" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="evo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- CodeLinaro additions -->
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom_display" groups="qcom" remote="evo" revision="lineage-21.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom_display" groups="qcom" remote="evo" revision="lineage-21.0-caf-sm8450" />
+
+  <!-- External -->
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="evo" />
+  <project path="external/piex" name="external_piex" groups="pdk" remote="evo" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="evo" />
+
+  <!-- Hardware -->
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="evo" />
+
+  <!-- Infrastructure -->
+  <project path="evolution/manifest" name="manifest" remote="evo" />
+  <project path="evolution/OTA" name="OTA" remote="evo" />
+  <project path="evolution/OTA-VANILLA" name="OTA" revision="udc-vanilla" remote="evo" />
+  <project path="evolution/XDA" name="XDA" remote="evo" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="evo" />
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="evo" />
+  <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="evo" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="evo" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="evo" />
+  <project path="packages/apps/Pif" name="packages_apps_Pif" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="evo" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="evo" />
+  <project path="packages/apps/SystemUIFlagFlipper" name="packages_apps_SystemUIFlagFlipper" remote="evo" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="evo"/>
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="evo" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+
+  <!-- SDK -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="evo" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="evo" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+
+  <!-- Vendor -->
+  <project path="vendor/extras" name="vendor_extras" remote="evo" />
+  <project path="vendor/gms" name="vendor_gms" remote="evo" clone-depth="1" />
+  <project path="vendor/lineage" name="vendor_evolution" remote="evo" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="evo" />
+</manifest>
