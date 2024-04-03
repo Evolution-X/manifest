@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="evo"
+           fetch="https://github.com/Evolution-X"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/vic" />
+
+  <remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/vic" />
+
+  <remote  name="github-non-los"
+           sync-c="true"
+           sync-j="4"
+           fetch="https://github.com" />
+
+  <!-- Art -->
+  <project path="art" name="art" groups="pdk" remote="evo" />
+
+  <!-- Bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="evo" />
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="evo" />
+
+  <!-- Build -->
+  <project path="build/bazel" name="build_bazel" groups="pdk" remote="evo" >
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE" />
+    <linkfile src="bazel.BUILD" dest="BUILD" />
+  </project>
+
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="evo" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="evo" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="build/release" name="build_release" groups="pdk,tradefed" remote="evo" />
+
+  <!-- External -->
+  <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="evo" />
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="evo" />
+  <project path="external/piex" name="external_piex" groups="pdk" remote="evo" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="evo" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="evo" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="evo" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="evo" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="evo" />
+
+  <!-- Infrastructure -->
+  <project path="evolution/manifest" name="manifest" remote="evo" />
+  <project path="evolution/OTA" name="OTA" remote="evo" />
+  <project path="evolution/OTA-VANILLA" name="OTA" revision="vic-vanilla" remote="evo" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Backgrounds" name="packages_apps_Backgrounds" remote="evo" />
+  <project path="packages/apps/BtHelper" name="TheParasiteProject/packages_apps_BtHelper" revision="main" remote="github-non-los" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="evo" />
+  <project path="packages/apps/EvoEgg" name="packages_apps_EvoEgg" remote="evo" />
+  <project path="packages/apps/Evolver" name="packages_apps_Evolver" remote="evo" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="evo" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="evo" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="evo" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio" remote="evo" />
+  <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="evo" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="evo" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="evo" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="evo" />
+  <project path="packages/apps/SystemUIFlagFlipper" name="packages_apps_SystemUIFlagFlipper" remote="evo" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="evo"/>
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="evo" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="evo" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="evo" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/custom-sdk" name="prebuilts_custom-sdk" remote="evo" />
+  <project path="prebuilts/tools-evolution" name="prebuilts_tools-evoluion" remote="evo" clone-depth="1" />
+
+  <!-- SDK -->
+  <project path="lineage-sdk" name="lineage-sdk" remote="evo" />
+
+  <!-- Sepolicy -->
+  <project path="device/lineage/sepolicy" name="device_evolution_sepolicy" remote="evo" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" groups="pdk" remote="evo" />
+  <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="evo" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="evo" />
+
+  <!-- Vendor -->
+  <project path="vendor/extras" name="vendor_extras" remote="evo" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="evo" />
+  <project path="vendor/gms" name="vendor_gms" remote="evo" clone-depth="1" />
+  <project path="vendor/lineage" name="vendor_evolution" remote="evo" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />
+  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="evo" />
+</manifest>
