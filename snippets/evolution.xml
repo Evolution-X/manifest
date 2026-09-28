@@ -58,6 +58,7 @@
   <!-- External -->
   <project path="external/FadingEdgeLayout" name="external_FadingEdgeLayout" remote="evo" />
   <project path="external/bouncycastle" name="external_bouncycastle" remote="evo" />
+  <project path="external/pffft" name="external_pffft" remote="evo" />
   <project path="external/piex" name="external_piex" groups="pdk" remote="evo" />
 
   <!-- Frameworks -->

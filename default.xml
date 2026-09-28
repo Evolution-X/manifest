@@ -433,7 +433,6 @@
   <project path="external/pdfium" name="platform/external/pdfium" groups="pdk" remote="aosp" />
   <project path="external/perfetto" name="platform/external/perfetto" groups="pdk,sysui-studio" remote="aosp" />
   <project path="external/perfmark" name="platform/external/perfmark" groups="pdk" remote="aosp" />
-  <project path="external/pffft" name="platform/external/pffft" groups="pdk" remote="aosp" />
   <project path="external/pigweed" name="platform/external/pigweed" groups="pdk" remote="aosp" />
   <project path="external/pixman" name="platform/external/pixman" groups="pdk" remote="aosp" />
   <project path="external/ply" name="platform/external/ply" groups="pdk" remote="aosp" />
