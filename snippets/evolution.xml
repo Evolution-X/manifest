@@ -80,6 +80,7 @@
   <project path="hardware/google/pixel" name="hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="evo" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="evo" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="evo" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" remote="evo" revision="cnb-caf-sm8150" />
 
   <!-- Infrastructure -->
   <project path="evolution/manifest" name="manifest" remote="evo" />
