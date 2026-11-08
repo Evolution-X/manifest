@@ -83,6 +83,9 @@
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="evo" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="evo" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" remote="evo" revision="cnb-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8450-6.6/audio/pal" name="vendor_qcom_opensource_arpal-lx" groups="qcom,waipio-6.6-vendor" remote="evo" revision="cnb-caf-sm8450-6.6" />
+  <project path="hardware/qcom-caf/sm8450-6.6/audio/primary-hal" name="hardware_qcom_audio-ar" groups="qcom,waipio-6.6-vendor" remote="evo" revision="cnb-caf-sm8450-6.6" />
+  <project path="hardware/qcom-caf/sm8450-6.6/display/hal" name="hardware_qcom_display" groups="qcom" remote="evo" revision="cnb-caf-sm8450-6.6" />
 
   <!-- Infrastructure -->
   <project path="evolution/manifest" name="manifest" remote="evo" />
